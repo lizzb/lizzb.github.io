@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML5, CSS3 and JavaScript demo</title>
+</head>
+<body>
+<!-- Start your code here -->
+  
+  http://liveweave.com/ULFu62 
+  
+  http://www.inserthtml.com/2013/07/bootstraps-and-web-kits-enemy-or-efficient/
+  
+  July 20, 2013 at 2:12 pm
+  
+  Web design kits, more commonly just referred to as bootstraps are kits that give you a way to start a website quickly and efficiently. They come with all the basics that you need to get running. There are a variety of bootstraps out there so today we’re going to look at them all and go over when you should and shouldn’t use them.
+  
+  Twitter: Number One Enemy
+  Pure CSS
+  Cardinal
+  UI Kit
+  Foundation
+  Topcoat
+  
+  Notable Mentions
+
+Centurion – Icon fonts and columns
+Gridism – Just grids.
+React – Javascript Framework for UI.
+Groundwork – A lot of stuff including grids and icons.
+Workless – Icons, Forms, Grids and more.
+  
+  
+  http://www.codersgrid.com/2013/07/30/uikit-frontend-framework/
+  http://www.codersgrid.com/2013/05/09/building-mobile-apps-with-web-standards/
+  http://www.codersgrid.com/2013/06/27/buttons-css-makes-buttons-beautiful/
+  
+  
+  http://css.dzone.com/articles/please-stop-using-twitter
+  http://www.monolinea.com/css-frameworks-comparison/
+  http://www.sitepoint.com/foundation-compelling-alternative-bootstrap/
+  <pre>
+  
+  http://coding.smashingmagazine.com/2011/06/10/useful-html-css-and-javascript-tools-and-libraries/
+  
+  http://seangoresht.com/
+
+http://adayinthepit.com/2012/07/11/twitter-bootstrap-altnerative/ 99Lime
+
+http://tympanus.net/codrops/
+http://tympanus.net/codrops/2014/01/07/shape-hover-effect-with-svg/
+  
+  http://code.tutsplus.com/articles/coda-2-reviewed--net-25120
+  
+  http://mimosa.io/optimization.html
+  
+  http://code.tutsplus.com/tutorials/optimize-your-css-with-requirejs--net-24755
+  
+  http://www.hanselman.com/blog/TheImportanceAndEaseOfMinifyingYourCSSAndJavaScriptAndOptimizingPNGsForYourBlogOrWebsite.aspx
+  
+  http://www.joezimjs.com/javascript/optimize-your-workflow-javascript-tools-and-libraries/
+  
+  http://lifehacker.com/whats-with-new-blogging-platforms-like-medium-should-1518292181
+  
+  http://css-tricks.com/style-injection-is-for-winners/
+  
+  
+  BLOG INFO
+  
+  
+  http://thenextweb.com/apps/2013/08/16/best-blogging-services/
+  
+  https://blog.shareaholic.com/best-blogging-platform/
+  
+  http://onlinebusiness.about.com/od/blogging/a/The-10-Best-Blogging-Platforms.htm
+  
+  https://medium.com/blogging-and-seo-tips/d62682d9b0aa
+  
+  http://thenextweb.com/conference/europe/?utm_source=tnwblog&utm_medium=announcement&utm_campaign=europe2014
+
+
+WEBSITE THUMBNAILS
+
+http://www.csszengarden.com/
+
+http://www.websnapr.com/
+
+http://snapcasa.com/
+
+http://www.webresourcesdepot.com/10-free-website-thumbnail-generation-services/
+
+https://www.youtube.com/watch?v=RfTQ8ylgvE8
+
+https://forums.digitalpoint.com/threads/simple-way-to-show-a-thumbnail-of-a-webpage.4338/
+
+http://tympanus.net/codrops/2011/06/22/creative-thumbnail-usage-in-web-design/
+
+http://www.shrinktheweb.com/
+http://www.shrinktheweb.com/content/website-thumbnail-uses-examples.html
+  
+  </pre>
+  
+  <ul>
+    <a href="http://flippinawesome.org/2014/02/17/8-bootstrap-alternatives/" target="_blank">8 Bootstrap Alternatives | February 17, 2014 | flippin' awesome</a>
+    <li> <a href="http://getbootstrap.com/" target="_blank"> Twitter Bootstrap 3 </a> </li>
+    <li> <a href="http://foundation.zurb.com/" target="_blank">Foundation from Zurb </a> </li>
+    <li> <a href="http://firezenk.github.io/zimit/" target="_blank"> Zimit </a> </li>
+    <li> <a href="http://ink.sapo.pt/" target="_blank"> InK </a> </li>
+    <li> <a href="http://www.99lime.com/elements/" target="_blank"> HTML KickStart </a> </li>
+    <li> <a href="http://getkickstrap.com/" target="_blank"> Kickstrap </a> </li>
+    <li> <a href="http://purecss.io/" target="_blank"> Pure by Yahoo! </a> </li>
+    <li> <a href="http://html5boilerplate.com/" target="_blank"> HTML5 Boilerplate </a> </li>
+    <li> <a href="http://yuilibrary.com/" target="_blank"> YUI </a> </li>
+  </ul>
+
+  
+  
+  <ul>
+      <a href="http://list.ly/list/303-alternatives-to-twitter-bootstrap-html5-css3-responsive-framework" target="_blank"> list.ly - 30 Alternatives to Twitter Bootstrap </a>
+    <li> <a href="" target="_blank"> Bootstrap </a> </li>
+    <li> <a href="" target="_blank"> Foundation </a> </li>
+    <li> <a href="" target="_blank"> Zimit </a> </li>
+    <li> <a href="" target="_blank"> HTML KickStart/99Lime UIKIT </a> </li>
+    <li> <a href="http://neat.bourbon.io/" target="_blank"> Bourbon Neat </a> </li>
+    <li> <a href="http://goldengridsystem.com/" target="_blank"> Golden Grid System </a> </li>
+    <li> <a href="" target="_blank"> Ink </a> </li>
+    <li> <a href="" target="_blank"> Maxmertkit </a> </li>
+    <li> <a href="http://www.99lime.com/" target="_blank"> Kickstrap </a> </li>
+    <li> <a href="" target="_blank"> Frameless </a> </li>
+    <li> <a href="" target="_blank"> Pure </a> </li>
+    <li> <a href="http://semantic-ui.com/" target="_blank"> Semantic UI </a> </li>
+    <li> <a href="http://www.simplecss.it/" target="_blank"> SimpleCss </a> </li>
+    <li> <a href="http://www.cascade-framework.com/" target="_blank"> Cascade Framework </a> </li>
+    <li> <a href="http://www.99lime.com/" target="_blank"> UI-Kit </a> </li>
+    <li> <a href="http://html5boilerplate.com/" target="_blank"> HTML5-Boilerplate </a> </li>
+    <li> <a href="http://www.blueprintcss.org/" target="_blank"> Blueprint </a> </li>
+    <li> <a href="" target="_blank"> Workless </a> </li>
+    <li> <a href="" target="_blank"> Bedrock </a> </li>
+    <li> <a href="" target="_blank"> Skeleton </a> </li>
+    <li> <a href="" target="_blank"> YUI Library </a> </li>
+    <li> <a href="" target="_blank"> Sencha Ext JS </a> </li>
+    <li> <a href="" target="_blank"> H5BP Redux </a> </li>
+    <li> <a href="" target="_blank"> Less Framework </a> </li>
+    <li> <a href="" target="_blank"> YAML CSS Framework </a> </li>
+    <li> <a href="" target="_blank"> The Square Grid </a> </li>
+    <li> <a href="" target="_blank"> Flat UI </a> </li>
+    <li> <a href="http://eduarea.wordpress.com/2013/05/22/10-factores-importantes-a-considerar-antes-de-elegir-un-web-host/?utm_campaign=Listly&utm_medium=list&utm_source=listly" target="_blank"> Spanish List </a> </li>
+    <li> <a href="" target="_blank"> Gumby </a> </li>
+    
+  </ul>
+  
+  http://netdna.webdesignerdepot.com/uploads/2014/03/featured15.jpg
+  
+  http://www.webdesignerdepot.com/2014/03/50-essential-freebies-for-web-designers-april-2014/
+  http://www.webdesignerdepot.com/2014/03/essential-design-tips-for-the-mobile-web/
+  http://www.webdesignerdepot.com/2014/03/how-to-get-started-with-svg/
+
+  
+  http://necolas.github.io/normalize.css/ normalize.css
+  http://fortawesome.github.io/Font-Awesome/ Font Awesome
+  http://www.entypo.com/ Entypo
+  https://css-tricks.com/examples/IconFont/
+  
+  
+  About Yeoman
+  
+  http://yeoman.io/blog/performance-optimization.html
+  
+  http://yycjs.com/learningyeoman/#/welcome
+  Introduction to Yeoman
+  http://seangoresht.com/
+  
+  <li> <a href="http://code.tutsplus.com/tutorials/building-apps-with-the-yeoman-workflow--net-33254" target="_blank"> Building Apps With the Yeoman Workflow | 15 Jul 2013 | tuts+ </a> </li>
+  
+  <li> <a href="http://code.tutsplus.com/tutorials/say-yo-to-yeoman--net-27167" target="_blank"> Say Yo to Yeoman | 13 Sep 2012 | tuts+ </a> </li>
+  
+  <li> <a href="http://www.webdesignermag.co.uk/features/yeoman-a-modern-workflow-for-todays-designers-and-developers/" target="_blank"> Yeoman: A modern workflow for todays designers and developers | 21st January 2013 </a> </li>
+  
+  <li> <a href="http://teamtreehouse.com/forum/is-an-automated-frontend-workflow-overkill-with-yeoman-grunt-bower-etc" target="_blank"> Treehouse - Overkill? </a> </li>
+  
+   http://assemble.io/docs/Resources.html
+  
+  Brunch - http://brunch.io/
+  Grunt - 
+  Live Reload - 
+  CodeKit - 
+  
+  http://yeoman.io/insight.html
+  
+  Yeoman: Modern Workflows for Modern Webapps by Tom Lane on Jan 21, 2013 
+  http://www.infoq.com/news/2013/01/yeoman
+  
+  
+  <a href="http://livestyle.emmet.io/" target="_blank"> Emmet LiveStyle </a>
+  <a href="http://livestyle.emmet.io/install/" target="_blank"> Install Emmet Livestyle</a>
+  
+  http://coding.smashingmagazine.com/2013/08/08/release-livestyle-css-live-reload/ August 8th, 2013 Smashing Magazine
+  
+<h4> Reference Lists </h4>
+  <a href="http://flippinawesome.org/2014/02/17/8-bootstrap-alternatives/" target="_blank">8 Bootstrap Alternatives | February 17, 2014 | flippin' awesome </a>
+  
+  https://docs.google.com/spreadsheet/ccc?key=0AiN0QfBTPpOCdDFjWlM0eU1ra21XanZkekxGbjA2WWc#gid=0
+  
+  
+  <a href="http://list.ly/list/303-alternatives-to-twitter-bootstrap-html5-css3-responsive-framework" target="_blank"> list.ly - 30 Alternatives to Twitter Bootstrap </a>
+  
+  
+  <pre>
+http://www.google.com/fonts/
+
+Icon Fonts / Resources
+
+http://weloveiconfonts.com/
+http://fontello.com/ - icon fonts generator
+https://useiconic.com/
+https://www.kickstarter.com/projects/207474036/iconic-advanced-icons-for-the-modern-web
+http://thenounproject.com/
+http://functionn.in/icon-web-fonts
+
+http://www.webdesignerdepot.com/2012/01/how-to-make-your-own-icon-webfont/
+http://gomakethings.com/icon-fonts/
+http://icomoon.io/docs.html
+
+https://symbolset.com/ - Symbolset uses font magic to change words into icons.
+
+<a href="http://www.webdesignerdepot.com/2011/02/10-iconic-fonts-and-why-you-should-never-use-them/" target="_blank"> 10 Iconic Fonts and Why You Should Never Use Them | Web Designer Depot | Feb 28, 2011 </a>
+
+
+
+
+
+
+</pre>
+
+<!-- End your code here -->
+</body>
+</html>
