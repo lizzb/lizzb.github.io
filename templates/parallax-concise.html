@@ -1,0 +1,453 @@
+<!--!DOCTYPE html>
+<html--> <!-- http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/index.html -->
+  <head>
+	<title>Teplok - Responsive Landing Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS -->
+	<link href="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/css/animate.css" rel="stylesheet">
+	<!--link href="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/css/style.css" rel="stylesheet"-->
+	<!--link href="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/css/style-responsive.css" rel="stylesheet"-->
+	<link href="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/third/font-awesome/css/font-awesome.css" rel="stylesheet">
+	
+	<!-- REQUIRED FOR LANDING PAGE -->
+	<link href="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/third/vegas/jquery.vegas.min.css" rel="stylesheet">
+	<link href="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/third/hovericon/css/component.css" rel="stylesheet">
+
+	<style>
+	/*link href="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/css/style.css" rel="stylesheet*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);/** BOOTSTRAP CUSTOMS **/body{font-family: 'Lato', Calibri, Arial, sans-serif;line-height: 170%;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family: 'Lato', Calibri, Arial, sans-serif;font-weight: 400;line-height: 1.1;color: inherit;font-weight: 400;line-height: 140%;}a{color: #B3C833}a:hover{color: #9DB41F}.container{position:relative}.btn{border-radius: 2px;}.form-control{border-radius: 0;border-color: #ddd;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(102, 175, 233, 0);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(102, 175, 233, 0);}.form-control:focus{border-color: #BFBFBF;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(102, 175, 233, 0);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(102, 175, 233, 0);}.form-control.input-lg{border-width: 3px;}.has-error .help-block,.has-error .control-label,.has-error .radio,.has-error .checkbox,.has-error .radio-inline,.has-error .checkbox-inline{color: #D64040;}.has-error .form-control{border-color: #D64040;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);}.has-error .form-control:focus{border-color: #CE3636;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 6px #fff;box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 6px #fff;}.has-error .input-group-addon{color: #D64040;background-color: #f2dede;border-color: #D64040;}.has-success .help-block,.has-success .control-label,.has-success .radio,.has-success .checkbox,.has-success .radio-inline,.has-success .checkbox-inline{color: #B3C833;}.has-success .form-control{border-color: #B3C833;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0);}.has-success .form-control:focus{border-color: #9DB41F;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 6px #fff;box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 6px #fff;}.has-success .input-group-addon{color: #B3C833;background-color: #dff0d8;border-color: #B3C833;}/** STYLING **/.wrapper{position: relative;}.clear{clear: both;}button.btn.btn-default.btn-teplok,a.btn.btn-default.btn-teplok{background-color:#B3C833;color: #fff;border-color: #B3C833;}button.btn.btn-default.btn-teplok:hover,button.btn.btn-default.btn-teplok:focus,a.btn.btn-default.btn-teplok:hover,a.btn.btn-default.btn-teplok:focus{background-color:#9DB421;border-color: #B3C833;}.btn i{margin-right: 5px;}.btn.btn-distance{margin: 20px 0;}/** HEADER **/#header-landing{height: 100vh;position:relative;background: rgba(1,1,1,.5);}#header-landing.inner-page{height: auto;position:relative;background: rgba(1,1,1,.5);}#header-landing #logo{position: absolute;top: 0;left: 0;padding: 10px 0;}#header-landing #logo h1{font-size: 32px;line-height: 100%;padding: 0;margin: 0;font-weight: 700;letter-spacing: -1px;}#header-landing #logo h1 a{color: #fff;-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;}#header-landing #logo h1 a:hover,#header-landing #logo h1 a:focus{color: #fff;text-decoration: none;}#header-landing #logo h1 i{color: #B3C833;}#header-landing #nav-menu{padding: 0;background: #272727;z-index: 20;padding: 5px 0;position: fixed;top: 0;left: 0;right: 0;width: 100%;}#header-landing #nav-menu .menus{float: right;font-size: 14px;padding: 5px 0;}#header-landing #nav-menu .menus ul{padding: 0;margin: 0;list-style: none;}#header-landing #nav-menu .menus ul li{display: inline-block;}#header-landing #nav-menu .menus ul li a{color: #fff;padding: 15px 15px;border-radius: 5px;line-height: 100%;-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;}#header-landing #nav-menu .menus ul li a:hover,#header-landing #nav-menu .menus ul li a:focus{color: #B3C833;background: #1C1C1C;}#header-landing #nav-menu .menus ul li.active a,#header-landing #nav-menu .menus ul li.active a:hover,#header-landing #nav-menu .menus ul li.active a:focus{color: #B3C833;background: #1C1C1C;}#header-landing #nav-menu .menus ul li a i{display: none;}#header-landing .awesome-slogan{text-align:center;padding-top: 10%;}#header-landing .awesome-slogan h2{padding: 15px 20px;color: #fff;font-weight: 300;font-size: 60px;line-height: 100%;letter-spacing: -2px;display: block;text-transform: uppercase;}#header-landing .awesome-slogan h4{padding: 10px 20px;color: #fff;font-weight: 300;font-size: 30px;line-height: 100%;display: block;}#header-landing .awesome-slogan h2 span,#header-landing .awesome-slogan h4 span{font-weight: 800;}#header-landing .awesome-slogan p{font-size: 18px;margin: 20px 0;color: #fff;padding: 5px 10px;display: block;}#header-landing .awesome-slogan .social-icons{padding: 20px;display: block;}#header-landing .awesome-slogan .social-icons img{width: 35px;margin: 2px;}/** SECTION **/.section-theme-landing{height: 10px;background: #B3C833;}.section-page-landing{background: #fff;z-index: 1;}.section-page-landing.section-transparent{background: transparent;color: #fff;}.section-page-landing.section-grey{background: #353535;color: #fff;}.section-page-landing.section-grey hr{height: 1px;background: #272727;margin: 50px 0;border: none;-webkit-box-shadow: 0px 1px 1px 0px rgba(82,82,82,0.49);-moz-box-shadow: 0px 1px 1px 0px rgba(82,82,82,0.49);box-shadow: 0px 1px 1px 0px rgba(82,82,82,0.49);}.section-page-landing.section-light-grey{background: #f3f3f3;}.section-page-landing .section-overlay{background: rgba(1,1,1,0.5) url(../third/vegas/overlays/02.png);width: 100%;height: auto;}.section-page-landing .inner-section{padding: 100px 0;}.section-page-landing#quote{background:url(../../images/image001.jpg) 100% 0 no-repeat fixed;margin: 0 auto;padding: 0;width: 100%;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/image001.jpg', sizingMethod='scale');-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/image001.jpg', sizingMethod='scale')";}.section-page-landing#pricing-table{background:url(../../images/image001.jpg) 100% 0 no-repeat fixed;margin: 0 auto;padding: 0;width: 100%;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/image001.jpg', sizingMethod='scale');-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../../images/image001.jpg', sizingMethod='scale')";}/** BOXES **/.the-box-landing{background: #fff;padding: 15px;margin: 30px 0;-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;}.the-box-landing.the-box-light-grey{background: #f3f3f3;}.the-box-landing.the-box-transparent{background: transparent;}.the-box-landing.border-hover-bottom{border-bottom: 3px solid transparent;}.the-box-landing:hover.border-hover-bottom{border-bottom-color: #B3C833;}.the-box-landing.border-color-left{border-left: 3px solid #B3C833;}.the-box-landing.border-color-top{border-top: 3px solid #B3C833;}.the-box-landing.border-color-bottom{border-bottom: 3px solid #B3C833;}.the-box-landing.border-color-right{border-right: 3px solid #B3C833;}.the-box-landing.full{padding: 0px;}.the-box-landing h3{font-weight: 300;margin: 0;padding: 0;}.the-box-landing h4{font-weight: 300;}.the-box-landing p{font-size: 15px;}.the-box-landing img.small-icon{margin: 25px 0;width: auto;}.btn.btn-purchase{margin-top: 10px;}/** CUSTOM HOVER ICON **//* Effect 9 */.hi-icon-effect-9 .hi-icon{-webkit-transition: box-shadow 0.2s;-moz-transition: box-shadow 0.2s;transition: box-shadow 0.2s;color: #B3C833;}.hi-icon-effect-9 .hi-icon:after{top: 0;left: 0;padding: 0;box-shadow: 0 0 0 3px #B3C833;-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;-moz-transition: -moz-transform 0.2s, opacity 0.2s;transition: transform 0.2s, opacity 0.2s;}/* Effect 9a */.no-touch .hi-icon-effect-9a .hi-icon:hover:after{-webkit-transform: scale(0.85);-moz-transform: scale(0.85);-ms-transform: scale(0.85);transform: scale(0.85);opacity: 0.5;text-decoration: none;}.no-touch .hi-icon-effect-9a .hi-icon:hover{box-shadow: 0 0 0 10px rgba(255,255,255,1);color: #B3C833;text-decoration: none;}/* Effect 9b */.no-touch .hi-icon-effect-9b .hi-icon:hover:after{-webkit-transform: scale(0.85);-moz-transform: scale(0.85);-ms-transform: scale(0.85);transform: scale(0.85);}.no-touch .hi-icon-effect-9b .hi-icon:hover{box-shadow: 0 0 0 10px rgba(255,255,255,0.4);color: #B3C833;}/** TESTIMONIAL **/.carousel-landing.carousel.carousel-testimonial{padding: 30px 0 40px;margin: 20px 0;text-align: center;position: relative;}.carousel-landing.carousel.carousel-testimonial .testimonial-icon{position: absolute;left: 0;right: 0;top: -15px;padding: 30px;z-index: 3;color: #B3C833;font-size: 24px;}.carousel-landing.carousel.carousel-testimonial .testimonial-inner{padding: 20px 20px 35px;margin: 0 0 70px 0;color: #fff;position: relative;}.carousel-landing.carousel.carousel-testimonial .testimonial-inner h5{font-size: 18px;margin-bottom: 30px;color: #fff;padding: 35px;margin: 0;border: 1px dashed #B3C833;border-radius: 10px;}.carousel-landing.carousel.carousel-testimonial .testimonial-inner h4.testimonial-name{color: #fff;padding: 10px 25px 30px;background: #272727;display:inline-block;border-radius:10px;}.carousel-landing.carousel.carousel-testimonial .testimonial-inner .testimonial-avatar{position: absolute;bottom: 0px;display: block;padding: 10px;height: 80px;left: 0;right: 0;z-index: 10;}.carousel-landing.carousel.carousel-testimonial .testimonial-inner .testimonial-avatar img{width: 90px;padding: 5px;background: #272727;}/** PORTFOLIO **/.portfolio-landing{margin: 40px 0;}.portfolio-landing .nav li{border-radius: 0;font-size: 16px;cursor: pointer;margin-bottom: 30px;padding: 10px 20px;text-align: center;color: #5b5b5b;-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;}.portfolio-landing .nav li:hover{background-color: #f4f4f4;}
+  .portfolio-landing .nav-pills > li.active,.portfolio-landing .nav-pills > li.active:hover,.portfolio-landing .nav-pills > li.active:focus{background-color: #B3C833;color: #fff;}.portfolio-landing #portfolio-grid{}.portfolio-landing #portfolio-grid:before,.portfolio-landing #portfolio-grid:after{display: table;content: " ";}.portfolio-landing #portfolio-grid:after{clear: both;}.portfolio-landing ul#portfolio-grid{padding: 0;margin: 30px 0;list-style: none;}.portfolio-landing #portfolio-grid .mix{display: none;opacity: 0;width: 25%;height: 175px;overflow: hidden;background: #ccc;text-align: center;margin: 0;float: left;position:relative;}.portfolio-landing #portfolio-grid .mix img{width: 100%;-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;}.portfolio-landing #portfolio-grid .mix:hover img{margin-top: 100px;}.portfolio-landing #portfolio-grid .mix .des{padding: 30px 10px;background: #B3C833;color: #fff;height: 200px;position: absolute;top: -200px;left: 0;right: 0;-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;}.portfolio-landing #portfolio-grid .mix .des h4{padding: 0;margin: 5px 0;}.portfolio-landing #portfolio-grid .mix .des a i{padding: 5.5px;margin: 2px;border: 2px solid #fff;border-radius: 50%;width: 30px;height: 30px;font-size: 16px;color: #fff;cursor: pointer;}.portfolio-landing #portfolio-grid .mix:hover .des{top: 0px;}table.table.table-modal-project{margin: 15px 0;}.table.table-modal-project > tbody > tr > td{border-top: none;padding: 5px 0;}/** PRICING TABLES **/.pricing-table-landing{text-align: center;position: relative;margin: 30px 0;color: #353535;-webkit-transition:All 0.25s ease;-moz-transition:All 0.25s ease;-o-transition:All 0.25s ease;}.pricing-table-landing:hover{box-shadow: 0 0 0 5px rgba(255,255,255,1);}.pricing-table-landing .the-box-landing{margin: 0;}.pricing-table-landing .header{padding: 15px 0 70px;background: #D6D6D6;}.pricing-table-landing .circle-price-wrap{width: 150px;height: 150px;background: #fff;border-radius: 50%;position: absolute;top: 60px;left: 50%;margin-left: -75px;border: 3px solid #D6D6D6;}.pricing-table-landing .circle-price-wrap h2{font-size: 40px;padding: 15px 0 ;}.pricing-table-landing .circle-price-wrap h2 small{font-size: 14px;color: #909090;display: block;}.pricing-table-landing table.table-inner{margin: 100px 0 0 0;padding: 0;}.pricing-table-landing table.table-inner > tbody:first-child > tr:first-child > td{border-top: 0;}.pricing-table-landing table.table-inner > thead > tr > th,.pricing-table-landing table.table-inner > tbody > tr > th,.pricing-table-landing table.table-inner > tfoot > tr > th,.pricing-table-landing table.table-inner > thead > tr > td,.pricing-table-landing table.table-inner > tbody > tr > td,.pricing-table-landing table.table-inner > tfoot > tr > td{padding: 15px;font-size: 16px;vertical-align: middle;border-top: 1px dotted #dddddd;}.pricing-table-landing:hover.best-choice{box-shadow: 0 0 0 5px rgba(179,200,51,1);}.pricing-table-landing.best-choice .header{background: #B3C833;color: #fff;}.pricing-table-landing.best-choice .circle-price-wrap{border: 3px solid #B3C833;}.pricing-table-landing.best-choice .circle-price-wrap h2{color: #B3C833;}.pricing-table-landing.best-choice .circle-price-wrap h2 small{color: #A0B724;}.pricing-table-landing.best-choice table.table-inner{margin: 100px 0 0 0;padding: 0;}.pricing-table-landing.best-choice table.table-inner > tbody:first-child > tr:first-child > td{border-top: 0;}/** BLOG **/.blog-landing{}.blog-landing:before,.blog-landing:after{display: table;content: " ";}.blog-landing:after{clear: both;}.blog-landing .blog-latest-img{float: left;width: 40%;height: 145px;overflow: hidden;position: relative;background: #B3C833;}.blog-landing .blog-latest-img .show-link-icon{position: absolute;bottom: 20%;left: 0;right: 0;text-align: center;font-size: 24px;color: #fff;opacity: 0;-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;z-index: 1;}.blog-landing .blog-latest-img:hover .show-link-icon{bottom: 40%;opacity: 1;}.blog-landing .blog-latest-img img{width: 100%;-webkit-transition:All 0.6s ease;-moz-transition:All 0.6s ease;-o-transition:All 0.6s ease;}.blog-landing .blog-latest-img:hover img{opacity: 0;}.blog-landing .blog-latest-des{float: left;width: 60%;padding: 5px 15px;}.blog-landing .blog-latest-des h3{font-size: 22px;line-height: 120%;margin-bottom: 10px;}.blog-landing .blog-latest-des h3 a{color: #353535;}.blog-landing .blog-latest-des h3 a:hover,.blog-landing .blog-latest-des h3 a:focus{color: #B3C833;text-decoration: none;}.blog-landing .blog-latest-des p.additional{color: #909090;}.blog-landing .blog-column{}.blog-landing .blog-column .img-wrap{height: 145px;overflow: hidden;position: relative;background: #B3C833;}.blog-landing .blog-column .img-wrap .show-link-icon{position: absolute;bottom: 20%;left: 0;right: 0;text-align: center;font-size: 24px;color: #fff;opacity: 0;-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;z-index: 1;}.blog-landing .blog-column .img-wrap :hover .show-link-icon{bottom: 40%;opacity: 1;}.blog-landing .blog-column .img-wrap img{width: 100%;-webkit-transition:All 0.6s ease;-moz-transition:All 0.6s ease;-o-transition:All 0.6s ease;}.blog-landing .blog-column .img-wrap:hover img{opacity: 0;}.blog-landing .blog-column-des{padding: 15px;}.blog-landing .blog-column-des h3{font-size: 18px;line-height: 120%;margin-bottom: 10px;}.blog-landing .blog-column-des h3 a{color: #353535;}.blog-landing .blog-column-des h3 a:hover,.blog-landing .blog-column-des h3 a:focus{color: #B3C833;text-decoration: none;}.blog-landing .blog-column-des p.additional{color: #909090;font-size: 13px;}/** THE TEAM **/.the-team-landing{margin: 30px 10px;}.the-team-landing .des{padding: 15px;}.the-team-landing h5{color: #B3C833;}.the-team-landing .ava-wrap{height: 230px;overflow: hidden;position: relative;}.the-team-landing .ava-wrap .see-detail{position: absolute;top: 0;bottom: 0;left: 0;right: 0;background: rgba(1,1,1,0);-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;}.the-team-landing :hover.ava-wrap .see-detail{background: rgba(1,1,1,.5);}.the-team-landing .ava-wrap .button-link{position: absolute;top: 20%;left: 0;right: 0;opacity: 0;-webkit-transition:All 0.4s ease;-moz-transition:All 0.4s ease;-o-transition:All 0.4s ease;}.the-team-landing .ava-wrap .button-link i{color: #fff;padding: 7.7px;margin: 2px;border: 1px solid #fff;border-radius: 50%;width: 35px;height: 35px;font-size: 18px;-webkit-transition:All 0.1s ease;-moz-transition:All 0.1s ease;-o-transition:All 0.1s ease;}.the-team-landing .ava-wrap .button-link i:hover{border-width: 4px;padding: 4.7px;}.the-team-landing .ava-wrap .button-link a{color: #fff;}.the-team-landing .ava-wrap .button-link a:focus,.the-team-landing .ava-wrap .button-link a:hover{color: #fff;text-decoration: none;}.the-team-landing .ava-wrap:hover .button-link{top: 45%;opacity: 1;}.the-team-landing img{width: 100%;}/** CLIENTS **/.clients{margin: 30px 0;}.clients img{width: 150px;margin: 30px 0;}/** QUOTE OF THE DAY **/.quote-landing{color: #fff}.quote-landing h1{font-weight: 700;font-size: 45px;}/** CONTACT FORM **/form.contact-form{margin: 40px 0;}/** BACK TO TOP BUTTON **/#back-top{color: #fff;background: #B3C833;font-size: 18px;line-height: 100%;display: inline-block;position: fixed;right: 0;bottom: 0;}#back-top a,#back-top a:hover,#back-top a:focus{color: #fff;padding: 10px;display: block;}/** BLOG PAGE **/h2.post-heading{margin: 0 0 15px 0;font-weight: 300;font-size: 35px;}.post-additional-detail{margin: 10px 0 10px 0;padding: 15px 0;border-bottom: 1px dashed #ddd;border-top: 1px dashed #ddd;}.post-additional-detail p{line-height: 100%;margin: 0;padding: 0;}img.img-post-detail{margin: 0 0 20px 0;}/** POST COMMENT **/.post-comment{margin: 30px 0;}.post-comment .media-list .media .media-object{width: 80px;margin-right: 10px;}.post-comment .media-list .media .media-body p.comment-date{color: #909090;}.post-comment .media-list .media .media-body p.comment-action i{margin: 2px;}/** SIDEBAR **/.sidebar{}.sidebar h4{margin: 40px 0 0 0;}.sidebar .search-form{margin: 0 0 20px 0;position: relative}.sidebar .search-form button.btn:hover,.sidebar .search-form button.btn:focus,.sidebar .search-form button.btn{position: absolute;right: 0;top: 0;padding-left: 5px;padding-right: 5px;background: transparent;border: none;}.sidebar .media-list{margin: 10px 0;}.sidebar .media-list .media-heading{margin: 5px 0;font-size: 16px;}/** BLOG LIST **/.blog-list .media-list .media-heading{font-size: 22px;font-weight: 400;}.blog-list .media-list .media-heading a{color: #353535;}.blog-list .media-list .media-heading a:hover{text-decoration: none;color: #B3C833;}.blog-list .media-list .media{margin-bottom: 40px;}.blog-list .media-list .media-object{width: 225px;margin-top: 5px;margin-right: 5px;}.blog-list .pagination li.active a{background: #B3C833;border-color: #B3C833;}/** ERROR PAGE **/.error-page{background: #B3C833;height: 100vh;color: #fff;}.error-inner{padding-top: 5%;text-align: center;}.error-inner a,.error-inner a:hover{color: #fff;}.error-inner .icon-side{font-size: 100px;padding: 20px;}.error-inner h1{font-size: 100px;margin: 0;padding: 0;}/** FOOTER **/form.form-subscribe{margin: 13px 0;}form.form-subscribe button.btn i{margin-left: 5px;}form.form-subscribe .form-control{border: none;}footer{padding: 40px 0 0;background: #272727;margin: 0 0 -30px 0;color: #C6C6C6;}footer a{color: #fff;}footer a:hover,footer a:focus{color: #B3C833;text-decoration: none;}footer h5{color: #B3C833;margin: 20px 0;}footer ul{padding: 0;margin: 0;list-style: none;}footer ul li{padding: 5px 0;}footer .footer{padding: 20px 0 50px;margin: 40px 0 0px;text-align: center;font-size: 12px;border-top: 1px solid #1c1c1c;-webkit-box-shadow: 0px -1px 1px 0px rgba(82,82,82,0.29);-moz-box-shadow: 0px -1px 1px 0px rgba(82,82,82,0.29);box-shadow: 0px -1px 1px 0px rgba(82,82,82,0.29);}
+    
+    
+    /*link href="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/css/style-responsive.css" rel="stylesheet"*/
+  
+  /*Large Desktop*/@media (min-width: 1200px){}/*Desktop*/@media (min-width: 992px) and (max-width: 1199px){.portfolio-landing #portfolio-grid .mix{height: 150px;}.portfolio-landing #portfolio-grid .mix:hover img{margin-top: 60px;}.portfolio-landing #portfolio-grid .mix .des{padding: 20px 10px;height: 150px;top: -150px;}.pricing-table-landing table.table-inner > thead > tr > th,.pricing-table-landing table.table-inner > tbody > tr > th,.pricing-table-landing table.table-inner > tfoot > tr > th,.pricing-table-landing table.table-inner > thead > tr > td,.pricing-table-landing table.table-inner > tbody > tr > td,.pricing-table-landing table.table-inner > tfoot > tr > td{padding: 15px;font-size: 14px;vertical-align: middle;border-top: 1px dotted #dddddd;}.blog-landing .blog-latest-img{height: 110px;}.blog-landing .blog-column .img-wrap{height: 125px;}.the-team-landing .ava-wrap{height: 180px;overflow: hidden;position: relative;}.clients img{width: 100%;}}/*Small desktop or tablet*/@media (min-width: 768px) and (max-width: 991px){#header-landing .awesome-slogan h2{font-size: 40px;}#header-landing .awesome-slogan h4{font-size: 20px;}.portfolio-landing #portfolio-grid .mix{width: 33.33333333333333%;height: 155px;}.portfolio-landing #portfolio-grid .mix .des{padding: 20px 10px;height: 155px;top: -155px;}}/*Phone*/@media (max-width: 767px){#header-landing #logo{position: relative;display: block;text-align: center;}#header-landing #nav-menu .menus{float: none;font-size: 14px;padding: 5px 0;text-align: center;}#header-landing #nav-menu .menus ul li a span{display: none;}#header-landing #nav-menu .menus ul li a i{display: inline-block;}#header-landing .awesome-slogan{text-align:center;padding-top: 17%;}#header-landing .awesome-slogan h2{font-size: 40px;}#header-landing .awesome-slogan h4{font-size: 20px;}.section-page-landing .inner-section{padding: 125px 0;}.portfolio-landing .nav li{margin-bottom: 0px;}.portfolio-landing #portfolio-grid .mix{width: 50%;height: 180px;}.portfolio-landing #portfolio-grid .mix .des{padding: 25px 10px;height: 180px;top: -180px;}.pricing-table-landing .header{padding: 15px 0 50px;}.pricing-table-landing .header h3{font-size: 20px;}.pricing-table-landing .circle-price-wrap{width: 120px;height: 120px;top: 50px;margin-left: -60px;}.pricing-table-landing .circle-price-wrap h2{font-size: 35px;padding: 5px 0 ;}.pricing-table-landing .circle-price-wrap h2 small{font-size: 13px;color: #909090;display: block;}.pricing-table-landing table.table-inner > thead > tr > th,.pricing-table-landing table.table-inner > tbody > tr > th,.pricing-table-landing table.table-inner > tfoot > tr > th,.pricing-table-landing table.table-inner > thead > tr > td,.pricing-table-landing table.table-inner > tbody > tr > td,.pricing-table-landing table.table-inner > tfoot > tr > td{padding: 10px;font-size: 13px;vertical-align: middle;border-top: 1px dotted #dddddd;}.the-team-landing .ava-wrap{height: 500px;overflow: hidden;position: relative;}.post-additional-detail,.post-additional-detail p.text-right{text-align: center;}.post-additional-detail p{margin: 10px 0;}.error-inner .icon-side{font-size: 50px;padding: 10px;}.error-inner h1{font-size: 50px;margin: 0;padding: 0;}}@media (max-width: 640px){#header-landing .awesome-slogan{text-align:center;padding-top: 17%;}#header-landing .awesome-slogan h2{padding: 10px 5px;font-size: 35px;margin-bottom: 0;}#header-landing .awesome-slogan h4{padding: 5px;font-size: 20px;margin: 0;}#header-landing .awesome-slogan p{font-size: 14px;margin: 5px 0;padding: 5px;}#header-landing .awesome-slogan .social-icons{padding: 10px;}}@media (max-width: 480px){#header-landing #nav-menu .menus ul li a{padding: 10px 10px;}#header-landing .awesome-slogan{text-align:center;padding-top: 20%;}#header-landing .awesome-slogan h2{padding: 10px 5px;font-size: 28px;margin-bottom: 0;}#header-landing .awesome-slogan .social-icons img{width: 25px;margin: 2px;}.portfolio-landing #portfolio-grid .mix{width: 50%;height: 150px;}.portfolio-landing #portfolio-grid .mix .des{padding: 20px 10px;height: 150px;top: -150px;}.blog-landing .blog-latest-img{float: none;width: 100%;height: 230px;}.blog-landing .blog-latest-des{float: none;width: 100%;padding:15px;}.blog-landing .blog-column .img-wrap{height: 125px;}.the-team-landing .ava-wrap{height: 320px;}.clients img{width: 100%;}h2.post-heading{margin: 0 0 15px 0;font-weight: 300;font-size: 25px;line-height: 140%;}}@media (max-width: 360px){#header-landing .awesome-slogan{text-align:center;padding-top: 30%;}.blog-landing .blog-latest-img{float: none;width: 100%;height: 200px;}.blog-landing .blog-column .img-wrap{height: 90px;}.portfolio-landing #portfolio-grid .mix{width: 100%;height: 180px;}.portfolio-landing #portfolio-grid .mix .des{padding: 30px 10px;height: 180px;top: -180px;}.blog-landing .blog-latest-img{float: none;width: 100%;height: 180px;}.blog-landing .blog-column .img-wrap{height: 100px;}.the-team-landing .ava-wrap{height: 260px;}}
+  </style>
+	
+	
+	</head>
+	
+	<!-- BODY WITH DATA STYPE FOR SCROLLSPY -->
+	<body class="tooltips" id="top" data-spy="scroll" data-target="#myScrollspy">
+	
+	
+	<!-- START PAGE -->
+	<div class="wrapper">
+	
+		<!-- HEADER -->
+		<div id="header-landing">
+		
+			<!-- NAV MENU WRAPPER FOR FIXED POSITION -->
+			<div id="nav-menu">
+			
+				<!-- NAV MENU CONTAINER -->
+				<div class="container">
+					
+					<!-- LOGO -->
+					<div id="logo">
+					<h1><a href="index.html"><i class="fa fa-flask"></i> teplok.</a></h1>
+					</div>
+					<!-- END LOGO -->
+					
+					<!-- NAV MENU -->
+					<div class="menus" id="myScrollspy">
+						<ul class="nav scroll-nav">
+							<li class="active"><a href="#top"><i class="fa fa-home"></i><span>Home</span></a></li>
+							<li><a href="#features"><i class="fa fa-laptop"></i><span>Features</span></a></li>
+							<li><a href="#services"><i class="fa fa-cog"></i><span>Services</span></a></li>
+							<li><a href="#portfolio"><i class="fa fa-flask"></i><span>Portfolio</span></a></li>
+							<li><a href="#blog"><i class="fa fa-coffee"></i><span>Blog</span></a></li>
+							<li><a href="#team"><i class="fa fa-users"></i><span>Team</span></a></li>
+							<li><a href="#contact"><i class="fa fa-envelope"></i><span>Contact</span></a></li>
+						</ul>
+					</div>
+					<!-- END NAV MENU -->
+					
+				</div>
+				<!-- END NAV MENU CONTAINER -->
+				
+			</div>
+			<!-- END NAV MENU FIXED POSITION -->
+			
+			<!-- HEADER SECTION CONTENT -->
+			<!-- END HEADER SECTION CONTENT -->
+			
+		</div>
+		<!-- END HEADER -->
+		
+		
+		<!-- SEECTION THEME COLOR -->
+		<div class="section-theme-landing"></div>
+		<!-- END SECTION THEME COLOR -->
+		
+
+		<!-- SECTION FEATURES -->
+				
+					<!-- SECTION TITLE -->
+					
+					<!-- WRITE SOMETHING ABOUT FEATURES HERE -->
+					<!-- END FEATURES DESCRIPTION -->
+					
+					<!-- FEATURES COLUMN -->
+					<!-- END FEATURES COLUMN -->
+					
+					
+		<!-- END SECTION FEATURES -->
+		
+
+		
+		<!-- SECTION SERVICES -->
+					
+					
+					<!-- TESTIMONIAL CAROUSEL -->
+
+					  <!-- Indicators -->
+
+					  <!-- Wrapper for slides -->
+					  
+					<!-- END TESTIMONIAL CAROUSEL -->
+					
+
+		<!-- END SECTION SERVICES -->
+		
+		
+		
+		<!-- SECTION PORTFOLIO -->
+
+			
+				<!-- MODAL PORTFOLIO -->
+				<!-- END MODAL PORTFOLIO -->
+
+						
+						<!-- PORTFOLIO CATEGORY FILTER -->
+						<!-- END PORTFOLIO CATEGORY FILTER -->
+						
+						
+						<!-- PORTFOLIO GRID CONTENT -->
+						<!-- END PORTFOLIO GRID CONTENT -->
+						
+						
+		<!-- END SECTION PORTFOLIO -->
+		
+		
+		
+		<!-- SECTION PRICING TABLE -->
+		<div class="section-page-landing section-transparent" id="pricing-table">
+			<div class="section-overlay">
+				<div class="inner-section">
+					<div class="container">
+						<h2 class="text-center">Pricing Table</h2>
+						
+						<!-- PRICING TABLE COLUMN -->
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="pricing-table-landing">
+									<div class="the-box-landing full">
+										<div class="header">
+											<h3>BRONZE</h3>
+										</div>
+										<div class="circle-price-wrap">
+										<h2>&#36;25<small>Per-Month</small></h2>
+										</div>
+										<table class="table table-inner table-striped">
+											<tbody>
+												<tr><td><strong>250MB</strong> Storage</td></tr>
+												<tr><td><strong>2.5GB</strong> Monthly Bandwidth</td></tr>
+												<tr><td><strong>Free</strong> Set up</td></tr>
+												<tr><td><strong>10</strong> Email Accounts</td></tr>
+												<tr><td><strong>1</strong> Add ons Domain</td></tr>
+											</tbody>
+											<tfoot>
+												<tr><td>
+												<a class="btn btn-primary">Purchase</a>
+												</td></tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-3 col-sm-6">
+								<div class="pricing-table-landing">
+									<div class="the-box-landing full">
+										<div class="header">
+											<h3>SILVER</h3>
+										</div>
+										<div class="circle-price-wrap">
+										<h2>&#36;50<small>Per-Month</small></h2>
+										</div>
+										<table class="table table-inner table-striped">
+											<tbody>
+												<tr><td><strong>500MB</strong> Storage</td></tr>
+												<tr><td><strong>5GB</strong> Monthly Bandwidth</td></tr>
+												<tr><td><strong>Free</strong> Set up</td></tr>
+												<tr><td><strong>25</strong> Email Accounts</td></tr>
+												<tr><td><strong>2</strong> Add ons Domain</td></tr>
+											</tbody>
+											<tfoot>
+												<tr><td>
+												<a class="btn btn-primary">Purchase</a>
+												</td></tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-3 col-sm-6">
+								<div class="pricing-table-landing best-choice">
+									<div class="the-box-landing full">
+										<div class="header">
+											<h3>GOLD</h3>
+										</div>
+										<div class="circle-price-wrap">
+										<h2>&#36;100<small>Per-Month</small></h2>
+										</div>
+										<table class="table table-inner table-striped">
+											<tbody>
+												<tr><td><strong>1GB</strong> Storage</td></tr>
+												<tr><td><strong>10GB</strong> Monthly Bandwidth</td></tr>
+												<tr><td><strong>Free</strong> Set up</td></tr>
+												<tr><td><strong>100</strong> Email Accounts</td></tr>
+												<tr><td><strong>5</strong> Add ons Domain</td></tr>
+											</tbody>
+											<tfoot>
+												<tr><td>
+												<a class="btn btn-default btn-teplok">Purchase</a>
+												</td></tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-md-3 col-sm-6">
+								<div class="pricing-table-landing">
+									<div class="the-box-landing full">
+										<div class="header">
+											<h3>PLATINUM</h3>
+										</div>
+										<div class="circle-price-wrap">
+										<h2>&#36;250<small>Per-Month</small></h2>
+										</div>
+										<table class="table table-inner table-striped">
+											<tbody>
+												<tr><td><strong>3GB</strong> Storage</td></tr>
+												<tr><td><strong>50GB</strong> Monthly Bandwidth</td></tr>
+												<tr><td><strong>Free</strong> Set up</td></tr>
+												<tr><td><strong>200</strong> Email Accounts</td></tr>
+												<tr><td><strong>10</strong> Add ons Domain</td></tr>
+											</tbody>
+											<tfoot>
+												<tr><td>
+												<a class="btn btn-primary">Purchase</a>
+												</td></tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- END PRICING TABLE COLUMN -->
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+
+
+
+<!-- ...................................................................... -->
+
+		
+		
+		<!-- BLOG SECTION -->
+
+					
+					<!-- BLOG STYLE 1 -->
+					<!-- END BLOG STYLE 1 -->
+
+					
+					<!--
+					<h4 class="text-center">YOU CAN ALSO USE THE FOLLOWING STYLE</h4>
+					-->
+
+
+					<!-- BLOG STYLE 2 -->
+					<!-- END BLOG STYLE 2 -->
+					
+
+<!-- ...................................................................... -->		
+		
+		
+		<!-- TEAM SECTION -->
+		<div class="section-page-landing section-light-grey" id="team">
+			<div class="inner-section">
+				<div class="container">
+					<h2 class="text-center">Meet Our Team</h2>
+					
+					<!-- TEAM COLUMN -->
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="the-box-landing text-center the-team-landing full">
+								<div class="ava-wrap">
+										<div class="see-detail"></div>
+										<div class="button-link">
+											<a href="#fakelink"><i class="fa fa-facebook"></i></a>
+											<a href="#fakelink"><i class="fa fa-twitter"></i></a>
+											<a href="#fakelink"><i class="fa fa-google-plus"></i></a>
+										</div>
+									<img src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/img/avatar/ava001.png" alt="Image team">
+								</div>
+								<div class="des">
+									<h3>Ari Rusmanto</h3>
+									<h5>-ART DIRECTOR-</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="the-box-landing text-center the-team-landing full">
+								<div class="ava-wrap">
+										<div class="see-detail"></div>
+										<div class="button-link">
+											<a href="#fakelink"><i class="fa fa-facebook"></i></a>
+											<a href="#fakelink"><i class="fa fa-twitter"></i></a>
+											<a href="#fakelink"><i class="fa fa-google-plus"></i></a>
+										</div>
+									<img src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/img/avatar/ava003.png" alt="Image team">
+								</div>
+								<div class="des">
+									<h3>Mas Bambang</h3>
+									<h5>-UI DESIGNER-</h5>
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-3 col-sm-6">
+							<div class="the-box-landing text-center the-team-landing full">
+								<div class="ava-wrap">
+										<div class="see-detail"></div>
+										<div class="button-link">
+											<a href="#fakelink"><i class="fa fa-facebook"></i></a>
+											<a href="#fakelink"><i class="fa fa-twitter"></i></a>
+											<a href="#fakelink"><i class="fa fa-google-plus"></i></a>
+										</div>
+									<img src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/img/avatar/ava004.png" alt="Image team">
+								</div>
+								<div class="des">
+									<h3>John Doe</h3>
+									<h5>-COPYWRITER-</h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="the-box-landing text-center the-team-landing full">
+								<div class="ava-wrap">
+										<div class="see-detail"></div>
+										<div class="button-link">
+											<a href="#fakelink"><i class="fa fa-facebook"></i></a>
+											<a href="#fakelink"><i class="fa fa-twitter"></i></a>
+											<a href="#fakelink"><i class="fa fa-google-plus"></i></a>
+										</div>
+									<img src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/img/avatar/ava002.png" alt="Image team">
+								</div>
+								<div class="des">
+									<h3>Nduk Annisa</h3>
+									<h5>-PHOTOGRAPHER-</h5>
+								</div>
+							</div>
+						</div>
+						
+						<div class="clearfix visible-xs"></div>
+						
+						<div class="col-md-3 col-sm-6">
+							<div class="the-box-landing text-center the-team-landing full">
+								<div class="ava-wrap">
+										<div class="see-detail"></div>
+										<div class="button-link">
+											<a href="#fakelink"><i class="fa fa-facebook"></i></a>
+											<a href="#fakelink"><i class="fa fa-twitter"></i></a>
+											<a href="#fakelink"><i class="fa fa-google-plus"></i></a>
+										</div>
+									<img src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/img/avatar/ava006.png" alt="Image team">
+								</div>
+								<div class="des">
+									<h3>Ebit Celenx</h3>
+									<h5>-GRAPHIC DESIGNER-</h5>
+								</div>
+							</div>
+						</div>
+						
+						<!-- YOU CAN USE THIS COLUMN FOR HIRING INFORMATION -->
+						<div class="col-md-9 col-sm-6">
+							<div class="the-box-landing full text-center the-box-transparent">
+								<h2>We're hiring, join with us...</h2>
+								<h4>
+								Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.
+								</h4>
+								<button class="btn btn-default btn-teplok btn-lg btn-distance"><i class="fa fa-cloud-upload"></i> Submit your application</button>
+								<p class="text-danger">*note : all in one zipped file</p>
+							</div>
+						</div>
+					</div>
+					<!-- END TEAM COLUMN -->
+					
+				</div>
+			</div>
+		</div>
+		<!-- END SECTION TEAM -->
+		
+		
+		
+		<!-- SECTION CLIENTS -->
+		<!-- END SECTION COLUMN -->
+		
+		
+		
+		<!-- SECTION QUOTE OF THE DAY -->
+		<!-- END SECTION QUOTE OF THE DAY -->
+		
+		
+		
+		<!-- SECTION CONTACT  -->
+		<!-- END SECTION CONTACT -->
+		
+		
+		<!-- FOOTER -->
+		<!-- END FOOTER -->
+		
+		
+		<!-- BACK TO TOP BUTTON -->
+		<div id="back-top">
+			<a href="#top"><i class="fa fa-chevron-up"></i></a>
+		</div>
+		<!-- END BACK TO TOP -->
+		
+		
+	</div>
+	
+	
+	<!-- END OF PAGE -->
+	
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/js/jquery.js"></script>
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/js/bootstrap.min.js"></script>
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/third/validator/bootstrapValidator.min.js"></script>
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/js/jquery.smooth-scroll.js"></script>
+	
+	<!-- REQUIRED FOR LANDING PAGE -->
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/third/hovericon/js/modernizr.custom.js"></script>
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/third/parallax/jquery.parallax-1.1.3.js"></script>
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/third/parallax/TweenMax.min.js"></script>
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/third/parallax/jquery.superscrollorama.js"></script>
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/third/mixitup/jquery.mixitup.js"></script>
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/third/vegas/jquery.vegas.min.js"></script>
+	<script src="http://diliat.in/wrapbootstrap/Teplok/1.0/OnePageParallax/assets/js/teplok-one-page.js"></script>
+	</body>
+</html>
