@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://sitediscount.ru/flatscrollerbs3/index.htm -->
+<html lang="en" style="overflow: hidden;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+    <meta charset="utf-8">
+    <title>Base page scroller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+<!-- Latest compiled and minified CSS BS 3.0. RC1-->
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+<!--link href="http://sitediscount.ru/flatscrollerbs3/assets/css/pricing.css" rel="stylesheet"-->
+<!--link href="http://sitediscount.ru/flatscrollerbs3/assets/css/style.css" rel="stylesheet"-->
+
+<style>
+/*****************************************
+Bootstrap responsive pricing tables v.1.0. 
+http://www.sitediscount.ru
+ArtLabs
+2013
+*****************************************/
+
+
+/*********************** GLOBAL STYLES **********************/
+
+
+* {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/**************************** PRICE BOX BODY **************************/
+.pricing-table {
+
+text-align:center;
+font-weight:400;
+border:6px solid #1ABC9C;
+margin-bottom:30px;
+background:#fff;
+
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.pricing-table:hover{
+-moz-box-shadow: 0 2px 8px 0 rgba(0,0,0,.5);
+-webkit-box-shadow: 0 2px 8px 0 rgba(0,0,0,.5);
+box-shadow: 0 2px 8px 0 rgba(0,0,0,.5);
+}
+
+
+
+/******************************** ROUND CORENERS ************************/
+
+.rounded{
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+/******************************** COLORS BODY *************************/
+.pricing-table.green {
+
+text-align:center;
+font-weight:400;
+border:6px solid #2ECC71;
+}
+
+.pricing-table.red {
+
+text-align:center;
+font-weight:400;
+border:6px solid #E74C3C;
+}
+
+.pricing-table.orange {
+
+text-align:center;
+font-weight:400;
+border:6px solid #F39C12;
+}
+
+.pricing-table.dark-blue {
+
+text-align:center;
+font-weight:400;
+border:6px solid #34495E;
+}
+
+.pricing-table.blue {
+
+text-align:center;
+font-weight:400;
+border:6px solid #3498DB;
+}
+
+/********************************** BOX CONTENT ************************/
+.pricing-table-sign-up {
+	border-top:1px solid #BDC3C7;
+	padding:10px 20px;
+	text-align:center;
+	background:#ECF0F1;
+}
+
+.pricing-table-features p {
+	
+	padding:5px 20px;
+	text-align:center;
+}
+.pricing-table-features p:nth-child(2n){
+	background:#ECF0F1;
+}
+
+.pricing-table-features, .pricing-table-space{
+	background:#fff;
+}
+
+.pricing-table p{
+		padding:5px;
+		margin-top:5px;
+		font-size:110%;
+		font-weight:400;
+		background:#fff;
+	}
+	.pricing-table p strong{
+		font-weight:600;
+	}
+	
+	
+/********************************* BOX HEADER ********************************/
+	.pricing-table .pricing-table-header {
+	color:#fff;
+	background: #1ABC9C;
+	padding:0px;
+}
+
+	.pricing-table-header .heading{
+	display:inline-block;
+	width:100%;
+	padding:15px 0px;
+	text-transform:uppercase;
+	
+}
+
+/**************************** COLOR BOX HEDER ***************************/
+	
+	.pricing-table.orange .heading{
+		background: #F39C12;
+	}
+	
+	.pricing-table.green .heading{
+		background: #2ECC71;
+	}
+	
+	.pricing-table.red .heading{
+	background: #E74C3C;
+	}
+	
+	.pricing-table.dark-blue .heading{
+	background: #34495E;
+	}
+	
+	.pricing-table.blue .heading{
+	background: #3498DB;
+	}
+
+
+.pricing-table .pricing-table-header .price-value{
+	background: #16A085;
+
+}
+
+.pricing-table.red .pricing-table-header .price-value{
+	background: #C0392B;
+
+}
+
+.pricing-table.orange .pricing-table-header .price-value{
+	background: #D35400;
+
+}
+.pricing-table.green .pricing-table-header .price-value{
+	background: #27AE60;
+
+}
+
+.pricing-table.dark-blue .pricing-table-header .price-value{
+	background: #2C3E50;
+
+}
+
+.pricing-table.blue .pricing-table-header .price-value{
+	background: #2980B9;
+
+}
+
+.pricing-table-header .price-value {
+	display:inline-block;
+	width:100%;
+	padding:20px 0px;
+	background: #1ABC9C;
+}
+
+.pricing-table-header .price-value span{
+	font-size:300%;
+}
+.pricing-table-header .price-value span.mo{
+	font-size:200%;
+}
+
+/****************************** HEADINGS AND BUTTONS STYLES**********************/
+body{
+	color:#34495E;
+}
+h1 {
+  font-size: 32px;
+  font-weight: 900; 
+  text-transform:uppercase;
+  }
+
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 2px; }
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  margin-top: 2px; }
+
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 4px; }
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+h6 {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase; }
+  
+ 
+/******************************* ALTERNATIVE BOOTSTRAP FLAT BUTTON STYLES **************************/
+
+	.btn {
+	  border: none;
+	  background: #34495e;
+	  color: white;
+	  font-size: 16.5px;
+	  text-decoration: none;
+	  text-shadow: none;
+	  -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+	  -webkit-transition: 0.25s;
+	  -moz-transition: 0.25s;
+	  -o-transition: 0.25s;
+	  transition: 0.25s;
+	  -webkit-backface-visibility: hidden; 
+	  
+	  }
+	  
+  .btn:hover, .btn:focus {
+    background-color: #4e6d8d;
+    color: white;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden; 
+	}
+	
+  .btn:active, .btn.active {
+    background-color: #2c3e50;
+    color: rgba(255, 255, 255, 0.75);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; 
+	}
+	
+ 
+  .btn.btn-large {
+    padding-bottom: 12px;
+    padding-top: 13px; 
+	
+	}
+  .btn.btn-primary {
+    background-color: #1abc9c; 
+	}
+    .btn.btn-primary:hover, .btn.btn-primary:focus {
+      background-color: #2fe2bf; 
+	  }
+    .btn.btn-primary:active, .btn.btn-primary.active {
+      background-color: #16a085; 
+	  }
+	  
+  .btn.btn-info {
+    background-color: #3498db; 
+	}
+    .btn.btn-info:hover, .btn.btn-info:focus {
+      background-color: #5dade2; 
+	  }
+    .btn.btn-info:active, .btn.btn-info.active {
+      background-color: #2383c4; 
+	  }
+	  
+  .btn.btn-danger {
+    background-color: #e74c3c; 
+	}
+    .btn.btn-danger:hover, .btn.btn-danger:focus {
+      background-color: #ec7063; 
+	  }
+    .btn.btn-danger:active, .btn.btn-danger.active {
+      background-color: #dc2d1b; 
+	  }
+	  
+  .btn.btn-success {
+    background-color: #2ecc71; 
+	}
+    .btn.btn-success:hover, .btn.btn-success:focus {
+      background-color: #55d98d; 
+	  }
+    .btn.btn-success:active, .btn.btn-success.active {
+      background-color: #27ad60; 
+	  }
+	  
+  .btn.btn-warning {
+    background-color: #f1c40f; 
+	}
+    .btn.btn-warning:hover, .btn.btn-warning:focus {
+      background-color: #f4d03f; 
+	  }
+    .btn.btn-warning:active, .btn.btn-warning.active {
+      background-color: #cea70c; 
+	  }
+	  
+/**************
+<!--link href="http://sitediscount.ru/flatscrollerbs3/assets/css/pricing.css" rel="stylesheet"-->
+
+<!--link href="http://sitediscount.ru/flatscrollerbs3/assets/css/style.css" rel="stylesheet"-->
+**********************************************/
+
+
+
+/* global styles
+===========================*/
+      body {
+        padding-top: 60px;
+        padding-bottom: 0px;
+		background:#F7F7F7;
+		font-size:16px;
+      }
+	  
+	  header{
+		padding-top:50px;
+	  }
+	  section {
+		position:relative;
+		padding-top:70px;
+		padding-bottom:80px;
+		width:100%;
+		min-width:100%;
+		margin-top:-5px;
+	  }
+	  
+	  .page-header{
+		padding-top:20px;
+	  }
+	  
+	  
+	  	.justify{
+		text-align:justify;
+	}
+	
+
+	/* HEADER
+	============================*/
+	   
+	  #head-top {
+	  position:relative;
+		background:#292C37;
+		padding-top:0px;
+		padding-bottom:0px;
+		margin-top:-60px;
+		display:inline-block;
+		width:100%;
+		height:100%;
+		overflow:hidden;
+		min-height:630px;
+	  }
+	  
+	  #head-top .jumbotron{
+		background:none;
+		min-height:300px;
+		color:#ffffff;
+		-webkit-border-radius:0px;
+		-moz-border-radius:0px;
+		border-radius:0px;
+		padding-top:160px;
+	}
+	#head-top .jumbotron h1{
+	text-shadow: 2px 2px 0px rgba(150, 150, 150, 0.65);
+	
+	}
+	
+	.gobtnwrapper{
+		position:absolute;
+		bottom:0px;
+		right:0px;
+		left:0px;
+		display:block;
+		width:100%;
+		height:40px;
+		text-align:center;
+	}
+	.gobtn{
+		display:inline-block;
+		width:70px;
+		height:40px;
+		background:#fc5242;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+		-webkit-box-shadow: 3px -3px 0px rgba(50, 50, 50, 0.25);
+		-moz-box-shadow:    3px -3px 0px rgba(50, 50, 50, 0.25);
+		box-shadow:         3px -3px 0px rgba(50, 50, 50, 0.25);
+		-moz-border-radius-topleft: 3px;
+		-webkit-border-top-left-radius: 3px;
+		 border-top-left-radius: 3px;
+		-moz-border-radius-topright: 5px;
+		-webkit-border-top-right-radius: 5px;
+		border-top-right-radius: 5px;
+		padding-top:15px;
+		
+	}
+	.gobtn i{
+		color:#292C37;
+	}
+	.gobtn:hover{
+		opacity:0.9;
+		text-decoration:none;
+	}
+	
+	
+	  /* SECTIONS
+	  ===========================*/
+	  
+	#Section-1{
+	background:#fc5242;
+	color:#fff;
+	}
+	  
+	  #Section-2{
+		background:#1dbb90;
+		color:#fff;
+	  }
+	  
+	  .well{
+		border:none;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	  }
+	  #Section-1 .well{
+		/*background-color:#34495e;*/
+      
+		background:url(http://sitediscount.ru/flatscrollerbs3/images/bgredtwo.png) 0% 0% fixed repeat;
+		color:#fff;
+		margin-bottom:-100px;
+		margin-top:60px;
+		padding-top:60px;
+		padding-bottom:60px;
+
+	  }
+	  .well .lead{
+		font-size:220%;
+	  }
+	  #Section-2 .well{
+		background:url(http://sitediscount.ru/flatscrollerbs3/images/bgredtwo.png) 0% 0% fixed repeat;
+		margin-bottom:-100px;
+		margin-top:60px;
+		padding-top:60px;
+		padding-bottom:60px;
+	  }
+	  #Section-3{
+		background:#4F92BF;
+	  } 
+	  #Section-3 h2,
+	  #Section-3 h3{
+		color:#fff;
+		
+	  }  
+	  
+	  #Section-4{
+		background:#5dade2;
+	  } 
+	  #Section-4 h2,
+	  #Section-4 h3{
+		color:#fff;
+		
+	  }
+	  
+	hr{
+		margin:40px 0px;
+	}
+	hr, 
+	.page-header {
+		border-color:rgba(250,250,250, 0.1)
+	  }
+	   
+	  #Section-2 p{
+		color:rgba(250,250,250, 0.9);
+	  }
+	  #Section-2 h3 {
+		
+	  }
+
+	  .page-header h2,
+	  .page-header h3{
+		font-weight:100;
+		font-size:46px;
+		line-height:46px;
+	  }
+	  
+	  .box{
+		margin-bottom:30px;
+	  }
+	  .about-box {
+		margin-bottom:20px;
+		margin-top:20px;
+		color:#fff;
+	  }
+	  
+	  .about-box h3,
+	  .about-box h4{
+		border-bottom:1px solid #fff;
+	  }
+	  .about-box h3 span,
+	  .about-box h4 span{
+		border-bottom:2px solid #fff;
+		display:inline-block;
+	  }
+	  
+	  /* FOOTER
+	  ================================*/
+	    footer{
+		display:inline-block;
+		width:100%;
+		min-width:100%;
+		padding-top:50px;
+		padding-bottom:50px;
+		min-height:200px;
+		background:#292C37;
+		color:#fff;
+	  }
+	  
+	  footer .circ-wrap{
+		float:left;
+		margin:10px;
+
+		
+	  }
+	   footer .circ-wrap a{
+			color:#fff;
+	   }
+	   
+	   footer .circ-wrap a:hover{
+			text-decoration:none;
+	   }
+	   
+	  /* NAVIGATION 
+	  =============================== */
+	.navbar .nav > li > a {
+		float: none;
+		padding: 30px 20px 30px;
+		color: #fff;
+		text-decoration: none;
+		text-shadow: none;
+		font-size:14px;
+		font-wight:bold;
+		text-transform:uppercase;
+		border-top: 10px solid transparent;
+	}
+	.navbar .nav > .active > a, 
+	.navbar .nav > .active > a:hover, 
+	.navbar .nav > .active > a:focus {
+		color: #fff;
+		text-decoration: none;
+		background: none;
+		border-top: 10px solid #fc5242;
+		-webkit-box-shadow:  none;
+			-moz-box-shadow:   none;
+				box-shadow:  none;
+	}
+	.navbar .navbar-brand {
+		padding: 30px 15px 30px 15px;
+		color:#fc5242;
+		text-shadow:none;
+		font-size:26px;
+		font-weight:100;
+		margin-right:30px;
+		max-width:300px;
+	}
+
+	.navbar {
+		-webkit-box-shadow: 0 3px 0px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0 3px 0px rgba(0, 0, 0, 0.1);
+					box-shadow:0 3px 0px rgba(0, 0, 0, 0.1);
+	}
+
+	.navbar {
+		min-height: 60px;
+		padding-right: 20px;
+		padding-left: 20px;
+		background: #2b2b2b;
+		background-image: none;
+		background-repeat: repeat-x;
+		border: none;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		filter: none;
+		-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+				box-shadow: none;
+	}
+	
+	/* ICONS WRAPERS
+	===========================*/
+	.circ-wrap{
+		width: 98px;
+		height: 98px;
+		margin: 0 auto 10px;
+		line-height: 95px;
+		text-align: center;
+		border: 1px solid rgba(250,250,250,.9);
+		border-radius: 50px;
+		padding-top:15px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	
+
+	/* Carousel
+	==============================*/
+	
+	.carousel-indicators{
+		top:0px;
+		left:95%;;
+	}
+	.carousel-control {
+		position: absolute;
+		top: 0%;
+		width: 40px;
+		height: 100%;
+		font-size: 30px;
+		padding-top:10px;
+		font-weight: 100;
+		line-height: 30px;
+		color: #ffffff;
+		text-align: center;
+		background: none;
+		border: none;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+
+	}
+	.carousel-control i{
+		position: absolute;
+		top: 40%;
+		z-index: 5;
+		display: inline-block;
+	}
+	.carousel-control.right {
+		right: -50px;
+		left: auto;
+		-moz-border-radius-topleft: 5px;
+		-webkit-border-top-left-radius: 5px;
+		 border-top-left-radius: 5px;
+		-moz-border-radius-bottomleft: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+		background:none;
+	}
+
+	.carousel-control.left {
+		left: -70px;
+		right: auto;
+		-moz-border-radius-topright: 5px;
+		-webkit-border-top-right-radius: 5px;
+		border-top-right-radius: 5px;
+		-moz-border-radius-bottomright: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		background:none;
+	}
+	
+	/* TEAM
+	==============================*/
+	.social-contacts a i{
+		text-decoration:none;
+		color:#3F7497;
+	}
+	.social-contacts a i:hover{
+
+		color:#335E7C;
+		text-decoration:none;
+		transition: all ease-in-out 0.3s;
+		-webkit-transition: all ease-in-out 0.3s;
+		-moz-transition: all ease-in-out 0.3s;
+	}
+	.social-contacts a:hover{
+		text-decoration:none;
+	}
+	
+	/* PRODUCTS
+	==============================*/
+	.thumbnail.product-item{
+		border-top:0px;
+		border-left:0px;
+		border-right:0px;
+		overflow:hidden;
+		max-height:300px;
+		padding-top:20px;
+		background:none;
+		border-bottom:4px solid rgba(0,0,0, 0.1);
+		-moz-box-shadow:none;
+		box-shadow:none;
+		-webkit-box-sizing:border-box;
+			-moz-box-sizing:border-box;
+				box-sizing:border-box;
+		-webkit-border-radius:0px;
+			-moz-border-radius:0px;
+				border-radius:0px;
+	}
+	
+	
+	/* BUTTONS 
+	=============================*/
+	.btn {
+	  border: none;
+	  background: #34495e;
+	  color: white;
+	  font-size: 16.5px;
+	  text-decoration: none;
+	  text-shadow: none;
+	  -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+	  -webkit-transition: 0.25s;
+	  -moz-transition: 0.25s;
+	  -o-transition: 0.25s;
+	  transition: 0.25s;
+	  -webkit-backface-visibility: hidden; 
+	}
+	
+  .btn:hover, 
+  .btn:focus {
+    background-color: #4e6d8d;
+    color: white;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-backface-visibility: hidden; 
+	}
+  .btn:active, .btn.active {
+		background-color: #2c3e50;
+		color: rgba(255, 255, 255, 0.75);
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none; 
+	}
+  .btn.disabled, 
+  .btn[disabled] {
+		background-color: #95a5a6;
+		color: white; 
+	}
+	
+  .btn.btn-large {
+		padding-bottom: 12px;
+		padding-top: 13px; 
+	}
+  .btn.btn-primary {
+		background-color: #1abc9c; 
+	}
+    .btn.btn-primary:hover, 
+	.btn.btn-primary:focus {
+      background-color: #2fe2bf; 
+	}
+    .btn.btn-primary:active, 
+	.btn.btn-primary.active {
+      background-color: #16a085;
+	 }
+	.btn.btn-info {
+		background-color: #3498db; 
+	}
+    .btn.btn-info:hover, 
+	.btn.btn-info:focus {
+      background-color: #5dade2; 
+	 }
+    .btn.btn-info:active, 
+	.btn.btn-info.active {
+      background-color: #2383c4; 
+	}
+  .btn.btn-danger {
+		background-color: #e74c3c; 
+	}
+    .btn.btn-danger:hover, 
+	.btn.btn-danger:focus {
+      background-color: #ec7063; 
+	}
+    .btn.btn-danger:active, 
+	.btn.btn-danger.active {
+      background-color: #dc2d1b; 
+	}
+  .btn.btn-success {
+    background-color: #2ecc71; 
+	}
+    .btn.btn-success:hover, 
+	.btn.btn-success:focus {
+      background-color: #55d98d; 
+	 }
+    .btn.btn-success:active, 
+	.btn.btn-success.active {
+      background-color: #27ad60; 
+	}
+  .btn.btn-warning {
+		background-color: #FFAA49; 
+	}
+    .btn.btn-warning:hover, 
+	.btn.btn-warning:focus {
+      background-color: #f4d03f; 
+	}
+    .btn.btn-warning:active, 
+	.btn.btn-warning.active {
+      background-color: #cea70c; 
+	 }
+	 
+	 /* Progress bars
+	 ================================*/
+	 .progress, 
+	 .ui-slider {
+		  background: #e8edf2;
+		  border-radius: 32px;
+		  height: 20px;
+		  -webkit-box-shadow: none;
+		  -moz-box-shadow: none;
+		  box-shadow: none;
+		  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); 
+  }
+  .progress .bar{
+	height:20px;
+  }
+  .progress .bar, 
+  .ui-slider .bar {
+		background: #1abc9c;
+		-webkit-box-shadow: none !important;
+		-moz-box-shadow: none !important;
+		box-shadow: none !important;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); 
+	}
+  .progress .bar-success, 
+  .ui-slider .bar-success {
+		background-color: #2ecc71;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); 
+	}
+  .progress .bar-warning, 
+  .ui-slider .bar-warning {
+		background-color: #FFAA49;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); 
+	}
+  .progress .bar-danger, .ui-slider .bar-danger {
+		background-color: #e74c3c;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); 
+	}
+  .progress .bar-info, .ui-slider .bar-info {
+		background-color: #3498db;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); 
+	}
+	
+	.navbar .btn-navbar {
+		float: right;
+		padding: 20px 20px;
+		margin:0px;
+		color: #ffffff;
+		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+		background-color: #292425;
+		background-image: none;
+		border-color: none;
+		filter: none;
+		-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+				box-shadow: none;
+		-webkit-border-radius:0px;
+			-moz-border-radius:0px;
+				border-radius:0px;
+	}
+	
+	/* @media width
+	====================================*/
+	@media (max-width: 979px){
+			.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+			padding-bottom: 0px;
+			padding-top: 0px;
+		}
+		.navbar-fixed-top, .navbar-fixed-bottom {
+			position: fixed !important;
+		}
+	
+.navbar .nav > li > a  {
+ padding:30px 10px;
+}
+.jumbotron h1 {
+font-size: 40px;
+}
+.carousel-control{
+	top:0%;
+}
+.carousel-control.left {
+	left: -10px;
+	z-index:1020;
+}
+
+.carousel-control.right {
+	right: 5px;
+	z-index:1020;
+}
+
+	#head-top {
+		min-height: auto;
+	}
+
+}
+
+	@media (max-width: 767px){
+		body {
+			padding-right: 0px;
+			padding-left: 0px;
+		}
+		.container{
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		
+		.navbar-inverse .navbar-inner {
+			min-height: 30px;
+		}
+		
+		.navbar .navbar-brand {
+			padding: 15px 0px 10px;
+		}
+		.navbar .navbar-brand{
+			margin-left:20px;
+			font-size:20px;
+			text-align:left;
+			margin-left:-20px;
+		}
+		.navbar .nav > li > a {
+			float: none;
+			padding: 15px 20px 15px;
+			-webkit-border-radius:0px;
+				-moz-border-radius:0px;
+					border-radius:0px;
+		}
+		
+		/* FIX FONT SIZE AND jumbotron padding in HEADER FOR MOBILE DEVICES 07/16/2013 */
+		#head-top .jumbotron {
+			padding-right:0px;
+			padding-left:0px;
+			padding-top:100px;
+			padding-bottom:15px;
+		}
+		
+		#head-top .jumbotron h1{
+			font-size:24px;
+			text-align:center;
+		}
+		#head-top .jumbotron .lead{
+			font-size:16px;
+			text-align:center;
+		}
+		
+
+		/* END: FIX HEADER FOR MOBILE DEVICES 07/16/2013 */
+		
+		.page-header h3 {
+			font-weight: 100;
+			font-size: 32px;
+			line-height: 34px;
+		}
+
+	}
+
+</style>
+
+
+<link href="http://sitediscount.ru/flatscrollerbs3/assets/css/font-awesome.min.css" rel="stylesheet"> 
+<!--[if lt IE 7]>
+	<link href="assets/css/font-awesome-ie7.min.css" rel="stylesheet">
+	<![endif]-->
+    <!-- Fav and touch icons -->
+
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+<!-- Le fav and touch icons -->
+<link rel="shortcut icon" href="http://sitediscount.ru/flatscrollerbs3/assets/ico/favicon.ico">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://sitediscount.ru/flatscrollerbs3/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://sitediscount.ru/flatscrollerbs3/assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://sitediscount.ru/flatscrollerbs3/assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://sitediscount.ru/flatscrollerbs3/assets/ico/apple-touch-icon-57-precomposed.png">
+
+  <style type="text/css"></style> <!-- THIS REALLY SEEMS TO MATTER BUT I DONT KNOW WHY -->
+
+  <body data-spy="scroll" data-target=".top-spy">
+   
+   <!-- NAV-->
+   	
+	<div id="topnav" class="navbar navbar-fixed-top">
+	<div class="container">
+	<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+	
+        <a class="navbar-brand" href="#head-top"><i class="icon-twitter-sign icon-x3"></i> FLATSCROLLER</a>
+		 <!-- Place everything within .navbar-collapse to hide it until above 768px -->
+			<div class="nav-collapse collapse navbar-responsive-collapse top-spy">
+				<ul  class="nav navbar-nav pull-right ">
+				   <li class="active"><a href="#head-top">Home</a></li>
+				  <li><a href="#Section-1">Section-1</a></li>
+				  <li><a href="#Section-2">Section-2</a></li>
+				  <li><a href="#Section-3">Section-3</a></li>
+				  <li><a href="#foot-sec">Footer</a></li>
+				</ul>
+			</div>
+		</div>
+   </div>
+	<!-- /NAV -->
+<!-- HEADER --> 
+ <header id="head-top">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	
+		<div id="myCarousel" class="carousel slide">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    
+  </ol>
+ <div class="container">
+  <!-- Carousel items -->
+  <div class="carousel-inner">	
+    <div class="active item"> 
+		
+			<div class="row">
+				<div class="text-right col-6 col-lg-8" style="padding-top:40px; ">
+					<h1 class="">FLATSCROLLER Bootstrap 3.0.!</h1>
+					<p class="lead">
+						Now Bootstrap 3.0. supported! A good starting point for your new project. Fully adaptive flat design. Smooth scrolling and parallax effects. Just choose the appropriate colors for your project, or use ready-made skins and ... done
+					</p>
+
+				</div>
+				<div class="text-center col-6 col-lg-4">
+					<img src="http://sitediscount.ru/flatscrollerbs3/images/flatphone.png" alt="">
+				</div>
+			</div>
+	</div>
+    <div class="item">
+				<div class="row">
+					<div class="text-center col-6 col-lg-4">
+						<img src="http://sitediscount.ru/flatscrollerbs3/images/flatphone.png" alt="">
+					</div>
+					<div class="col-6 col-lg-8" style="padding-top:40px; ">
+						<h1 class="">FLATSCROLLER Bootstrap 3.0.!</h1>
+						<p class="lead">
+							Now Bootstrap 3.0. supported! Here goes marketing paragraph. A good starting point for your new project. Fully adaptive flat design. Smooth scrolling and parallax effects. Just choose the appropriate colors for your project, or use ready-made skins and ... done
+						</p>
+
+					</div>
+					
+				</div>
+			
+		</div>
+   	</div>
+ </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+
+			
+		</div>
+      </div>
+	  
+	  <!-- GO BTN WRAPPER-->
+	  <div class="gobtnwrapper">
+		<a class="gobtn" href="#Section-1"><i class="icon-chevron-down icon-large"></i></a>
+	  </div>
+	  <!-- /GO BTN WRAPPER-->
+	</header>
+<!-- / HEADER -->
+
+
+<!--  SECTION-1 -->  
+<section id="Section-1">
+	<div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+		<div class="page-header text-center col-sm-12 col-lg-12">
+			<h3>Section-1 We provide awesome services</h3>
+			<p class="lead">
+				A good starting point for your new project. Fully adaptive flat design. Smooth scrolling and parallax effects. 
+			</p>
+		</div> 
+	</div>	
+	
+	<div class="row">
+        <div class="text-center box col-12 col-lg-4">
+		<div class="circ-wrap">
+			<i class="icon-html5 icon-4x"></i>
+		</div>
+          <h3>1. HTML5 STANDARD </h3>
+          <p class="justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+         
+        </div>
+        <div class="text-center box col-12 col-lg-4">
+			<div class="circ-wrap">
+			<i class="icon-css3 icon-4x"></i>
+			</div>
+          <h3>2. CSS3 EFFECTS</h3>
+          <p class="justify">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+         
+       </div>
+        <div class="text-center box col-12 col-lg-4">
+		<div class="circ-wrap">
+			<i class="icon-tablet icon-4x"></i>
+			</div>
+          <h3>3. MOBILE READY</h3>
+          <p class="justify">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        
+        </div>
+	</div>
+	
+	<div class="row">
+		<div class="text-center box col-12 col-lg-4">
+		<div class="circ-wrap">
+			<i class="icon-rocket icon-4x"></i>
+			</div>
+          <h3>4. FASTER START</h3>
+          <p class="justify">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        
+        </div>
+		<div class="text-center box col-12 col-lg-4">
+		<div class="circ-wrap">
+			<i class="icon-beaker icon-4x"></i>
+			</div>
+          <h3>5. FONT AWESOME 3.1.1.</h3>
+          <p class="justify">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        
+        </div>
+		<div class="text-center box col-12 col-lg-4">
+		<div class="circ-wrap">
+			<i class="icon-thumbs-up icon-4x"></i>
+			</div>
+          <h3>6. BOOTSTRAP 3.0.!</h3>
+          <p class="justify">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        
+        </div>
+	</div>
+	
+	</div><!-- / CONTAINER-->
+	<div class="well">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-lg-9">
+					<p class="lead">
+						Be the first who get Bootstrap 3.0. template!
+					</p>
+					
+				</div>
+				<div class="text-left col-sm-12 col-lg-3">
+					<a class="btn btn-large btn-block btn-danger" href="http://www.bootstraptor.com">Get it now!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- / SECTION-1 -->
+
+<!-- SECTION-2 -->
+<section id="Section-2">
+	<div class="container">
+
+   <div class="row">
+		<div class="page-header text-center col-sm-12 col-lg-12">
+			<h3>We provide an awesome products</h3>
+			<p class="lead">
+		</p></div> 
+	</div>	
+	
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="text-center col-sm-4 col-lg-4">
+         	<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/iMac.png"></a> 
+        </div>
+		
+        <div class="col-sm-8 col-lg-8">
+          <h3>Heading Heading Heading Heading</h3>
+          <p class="lead">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+		  <p><a class="btn btn-large btn-default" href="http://www.bootstraptor.com">View details »</a></p>
+       </div>
+	   
+      </div>
+	  <hr>
+	  <!-- Example row of columns -->
+      
+<div id="myCarousel2" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+  
+  <div class="item active">
+  <div class="row text-center">
+		<!-- ITEM-->
+        <div class="col-6 col-lg-3">
+			<div class="thumbnail product-item">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/flatphone.png"></a>
+			</div>
+			<h3>Product name</h3>
+			<p><a class="btn btn-large btn-block btn-default" href="http://www.bootstraptor.com">View details »</a></p>	
+        </div>
+		<!-- ITEM-->
+		
+		<!-- ITEM-->
+        <div class="col-6 col-lg-3">
+			<div class="thumbnail product-item">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/flatphone.png"></a>
+			</div>
+			<h3>Product name</h3>
+			<p><a class="btn btn-large btn-block btn-default" href="http://www.bootstraptor.com">View details »</a></p>	
+        </div>
+		<!-- ITEM-->
+		
+		<!-- ITEM-->
+        <div class="col-6 col-lg-3">
+			<div class="thumbnail product-item">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/flatphone.png"></a>
+			</div>
+			<h3>Product name</h3>
+			<p><a class="btn btn-large btn-block btn-default" href="http://www.bootstraptor.com">View details »</a></p>	
+        </div>
+		<!-- ITEM-->
+		
+		<!-- ITEM-->
+        <div class="col-6 col-lg-3">
+			<div class="thumbnail product-item">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/flatphone.png"></a>
+			</div>
+			<h3>Product name</h3>
+			<p><a class="btn btn-large btn-block btn-default" href="http://www.bootstraptor.com">View details »</a></p>	
+        </div>
+		<!-- ITEM-->
+	</div>
+	</div>
+	
+	<div class="item">
+	<div class="row text-center">
+		<!-- ITEM-->
+        <div class="col-6 col-lg-3">
+			<div class="thumbnail product-item">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/flatphone.png"></a>
+			</div>
+			<h3>Product name</h3>
+			<p><a class="btn btn-large btn-block btn-default" href="http://www.bootstraptor.com">View details »</a></p>	
+        </div>
+		<!-- ITEM-->
+		
+		<!-- ITEM-->
+        <div class="col-6 col-lg-3">
+			<div class="thumbnail product-item">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/flatphone.png"></a>
+			</div>
+			<h3>Product name</h3>
+			<p><a class="btn btn-large btn-block btn-default" href="http://www.bootstraptor.com">View details »</a></p>	
+        </div>
+		<!-- ITEM-->
+		
+		<!-- ITEM-->
+        <div class="col-6 col-lg-3">
+			<div class="thumbnail product-item">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/flatphone.png"></a>
+			</div>
+			<h3>Product name</h3>
+			<p><a class="btn btn-large btn-block btn-default" href="http://www.bootstraptor.com">View details »</a></p>	
+        </div>
+		<!-- ITEM-->
+		
+		<!-- ITEM-->
+        <div class="col-6 col-lg-3">
+			<div class="thumbnail product-item">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/flatphone.png"></a>
+			</div>
+			<h3>Product name</h3>
+			<p><a class="btn btn-large btn-block btn-default" href="http://www.bootstraptor.com">View details »</a></p>	
+        </div>
+		<!-- ITEM-->
+	</div>
+	</div>
+</div><!-- /INNER-->  
+	    <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel2" data-slide="prev"><i class="icon-chevron-left"></i></a>
+  <a class="carousel-control right" href="#myCarousel2" data-slide="next"><i class="icon-chevron-right"></i></a>	
+</div><!-- CAROUSEL-->
+</div>
+	  
+	<!-- / CONTAINER-->
+	<div class="well">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-9">
+					<p class="lead">
+						Marketing slogan awesome call to action with button!
+					</p>
+					
+				</div>
+				<div class="text-left col-12 col-lg-3">
+					<a class="btn btn-large btn-block btn-default" href="http://www.bootstraptor.com">Get it now!</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+ </section> 
+ <!-- / SECTION-2 -->
+
+<!-- / SECTION-3 --> 
+<section id="Section-3">
+	<div class="container">
+		<div class="row">
+			<div class="page-header text-center col-sm-12 col-lg-12">
+				<h3>Our team - who build this awesome project</h3>
+				<p class="lead">
+			</p></div> 
+		</div>	
+ 
+		<div class="row text-center">
+			<div class="col-6 col-lg-3">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/avaone.jpg" width="160" height="160" class="img-circle"></a>
+				<h3>John Doe</h3>
+			  <p class="text-center social-contacts"> <a href="#"><i class="icon-facebook-sign icon-2x"></i></a> <a href="#"><i class="icon-twitter-sign icon-2x"></i></a> <a href="#"><i class="icon-github-sign icon-2x"></i></a> <a href="#"><i class="icon-linkedin-sign icon-2x"></i></a> <a href="#"><i class="icon-google-plus-sign icon-2x"></i></a></p>
+			</div>
+			<div class="col-6 col-lg-3">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/avatwo.jpg" width="160" height="160" class="img-circle"></a>
+				<h3>John Doe</h3>
+			  <p class="text-center social-contacts"> <a href="#"><i class="icon-facebook-sign icon-2x"></i></a> <a href="#"><i class="icon-twitter-sign icon-2x"></i></a> <a href="#"><i class="icon-github-sign icon-2x"></i></a> <a href="#"><i class="icon-linkedin-sign icon-2x"></i></a> <a href="#"><i class="icon-google-plus-sign icon-2x"></i></a></p>
+			</div>
+			<div class="col-6 col-lg-3">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/avathree.jpg" width="160" height="160" class="img-circle"></a>
+				<h3>John Doe</h3>
+			  <p class="text-center social-contacts"> <a href="#"><i class="icon-facebook-sign icon-2x"></i></a> <a href="#"><i class="icon-twitter-sign icon-2x"></i></a> <a href="#"><i class="icon-github-sign icon-2x"></i></a> <a href="#"><i class="icon-linkedin-sign icon-2x"></i></a> <a href="#"><i class="icon-google-plus-sign icon-2x"></i></a></p>
+			</div>
+			<div class="col-6 col-lg-3">
+				<a href="#"><img src="http://sitediscount.ru/flatscrollerbs3/images/avafour.jpg" width="160" height="160" class="img-circle"></a>
+				<h3>John Doe</h3>
+			  <p class="text-center social-contacts"> <a href="#"><i class="icon-facebook-sign icon-2x"></i></a> <a href="#"><i class="icon-twitter-sign icon-2x"></i></a> <a href="#"><i class="icon-github-sign icon-2x"></i></a> <a href="#"><i class="icon-linkedin-sign icon-2x"></i></a> <a href="#"><i class="icon-google-plus-sign icon-2x"></i></a></p>
+			</div>
+			
+		</div>
+		<hr>
+		
+<div class="row">
+<!-- SERVICE SIDE-->
+<div class="col-sm-7 col-lg-7">
+	<!-- INNER ROW-->
+	
+	<h3 class="main-color">OUR SERVICES</h3>
+		
+	<!-- SERVICE ITEM-->
+	<div class="about-box row">
+		<div class="col-sm-3 col-lg-3">
+			<div class="circ-wrap">
+				<i class="icon-beaker icon-4x"></i>
+			</div>
+		</div>
+		<div class="col-sm-8 col-lg-8">		
+			<h4><span>WEB &amp; UI DESIGN</span></h4>
+			
+			<p class="">
+			There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+			</p>
+		</div>
+	</div>
+	<!--/ SERVICE ITEM-->
+
+		<!-- SERVICE ITEM-->
+	<div class="about-box row">
+		<div class="col-sm-3 col-lg-3">
+			<div class="circ-wrap">
+				<i class="icon-beaker icon-4x"></i>
+			</div>
+		</div>
+		<div class="col-sm-8 col-lg-8">		
+			<h4><span>WEB &amp; UI DESIGN</span></h4>
+			
+			<p class="">
+			There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+			</p>
+		</div>
+	</div>
+	<!--/ SERVICE ITEM-->
+	
+		<!-- SERVICE ITEM-->
+	<div class="about-box row">
+		<div class="col-sm-3 col-lg-3">
+			<div class="circ-wrap">
+				<i class="icon-beaker icon-4x"></i>
+			</div>
+		</div>
+		<div class="col-sm-8 col-lg-8">		
+			<h4><span>WEB &amp; UI DESIGN</span></h4>
+			
+			<p class="">
+			There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+			</p>
+		</div>
+	</div>
+	<!--/ SERVICE ITEM-->
+
+</div><!--/SPAN7-->
+
+<!-- SKILLS BAR SIDE-->
+<div class="col-sm-5 col-lg-5">
+	
+	<h3 class="main-color">MAIN SKILLS</h3>
+	<!-- BAR ITEM-->
+	<h4>DESIGN</h4>
+		<div class="progress">
+            <div class="bar" style="width: 75%;"></div>
+        </div>
+	<!--/ BAR ITEM-->
+		
+	<!-- BAR ITEM-->
+	<h4>HTML5</h4>
+		<div class="progress">
+            <div class="bar bar-danger" style="width: 60%;"></div>
+        </div>
+	<!--/ BAR ITEM-->
+		
+	<!-- BAR ITEM-->
+	<h4>CSS3</h4>
+		<div class="progress">
+            <div class="bar bar-success" style="width: 55%;"></div>
+        </div>
+	<!--/ BAR ITEM-->
+		
+	<!-- BAR ITEM-->
+		<h4>JQUERY</h4>
+		<div class="progress">
+            <div class="bar bar-warning" style="width: 75%;"></div>
+        </div>
+	<!--/ BAR ITEM-->
+		
+	<!-- BAR ITEM-->
+		<h4>PHP</h4>
+		<div class="progress">
+            <div class="bar bar-info" style="width: 55%;"></div>
+        </div>
+	<!-- / BAR ITEM-->
+	
+	</div>
+<!--/ SKILLS BAR SIDE-->
+</div>
+</div><!-- /CONTAINER-->
+</section>
+<!-- / SECTION-3 --> 
+ 
+ <!-- SECTION-4 -->
+<section id="Section-4">
+<div class="container">
+   <div class="row">
+		<div class="page-header text-center col-sm-12 col-lg-12">
+			<h3>Section-3 Plans &amp; Pricing</h3>
+		</div> 
+	</div>	
+	
+  
+	  
+	  <div class="row">
+	  
+		<!--  STANDART PRICE ITEM  -->
+			<div class="col-12 col-lg-3">
+				<div class="pricing-table blue"><!-- BODY BOX-->
+					<div class="pricing-table-header"><!-- HEADER BOX-->
+						<span class="heading">Single applications</span>
+						<span class="price-value">$<span>14</span><span class="mo">/mo</span></span>		   
+					</div><!--/ BODY BOX-->
+						
+				<div class="pricing-table-space"></div><!-- CONTENT BOX-->
+				<div class="pricing-table-features">
+					<p> <strong>Single</strong> installation</p>
+					<p><strong> Unlimited </strong> Support</p>
+					<p><strong>Validation</strong> W3C</p>
+					<p><strong>Bootstrap</strong> 2.3.0</p>
+					<p><strong>HTML5</strong> &amp; <strong> CSS3</strong></p>
+				</div><!-- /  CONTENT BOX-->
+						
+					<div class="pricing-table-sign-up"><!-- BUTTON BOX-->
+						<a href="#" class="btn btn-large btn-block btn-info">BUY NOW!</a>
+					</div><!-- BUTTON BOX-->
+						
+				</div><!--/ BODY BOX-->
+			</div><!--  SPAN3  -->
+			<!--  STANDART PRICE ITEM  -->
+			<!--  STANDART PRICE ITEM  -->
+			<div class="col-12 col-lg-3">
+				<div class="pricing-table blue"><!-- BODY BOX-->
+					<div class="pricing-table-header"><!-- HEADER BOX-->
+									
+						<span class="heading">Single applications</span>
+						<span class="price-value">$<span>14</span><span class="mo">/mo</span></span>
+								   
+					</div><!--/ BODY BOX-->
+						
+				<div class="pricing-table-space"></div><!-- CONTENT BOX-->
+				<div class="pricing-table-features">
+					<p> <strong>Single</strong> installation</p>
+					<p><strong> Unlimited </strong> Support</p>
+					<p><strong>Validation</strong> W3C</p>
+					<p><strong>Bootstrap</strong> 2.3.0</p>
+					<p><strong>HTML5</strong> &amp; <strong> CSS3</strong></p>
+				</div><!-- /  CONTENT BOX-->
+						
+				<div class="pricing-table-sign-up"><!-- BUTTON BOX-->
+					<a href="#" class="btn btn-large btn-block btn-info">BUY NOW!</a>
+				</div><!-- BUTTON BOX-->
+						
+				</div><!--/ BODY BOX-->
+			</div><!--  SPAN3  -->
+			<!--  STANDART PRICE ITEM  -->
+			<!--  STANDART PRICE ITEM  -->
+			<div class="col-12 col-lg-3">
+			<div class="pricing-table blue"><!-- BODY BOX-->
+				<div class="pricing-table-header"><!-- HEADER BOX-->
+								
+					<span class="heading">Single applications</span>
+					<span class="price-value">$<span>14</span><span class="mo">/mo</span></span>
+							   
+				</div><!--/ BODY BOX-->
+						
+				<div class="pricing-table-space"></div><!-- CONTENT BOX-->
+				<div class="pricing-table-features">
+					<p> <strong>Single</strong> installation</p>
+					<p><strong> Unlimited </strong> Support</p>
+					<p><strong>Validation</strong> W3C</p>
+					<p><strong>Bootstrap</strong> 2.3.0</p>
+					<p><strong>HTML5</strong> &amp; <strong> CSS3</strong></p>
+				</div><!-- /  CONTENT BOX-->
+						
+				<div class="pricing-table-sign-up"><!-- BUTTON BOX-->
+					<a href="#" class="btn btn-large btn-block btn-info">BUY NOW!</a>
+				</div><!-- BUTTON BOX-->
+					
+			</div><!--/ BODY BOX-->
+			</div><!--  SPAN3  -->
+			<!--  STANDART PRICE ITEM  -->
+			
+			<!--  STANDART PRICE ITEM  -->
+			<div class="col-12 col-lg-3">
+			<div class="pricing-table blue"><!-- BODY BOX-->
+			<div class="pricing-table-header"><!-- HEADER BOX-->
+							
+			<span class="heading">Single applications</span>
+			<span class="price-value">$<span>14</span><span class="mo">/mo</span></span>
+						   
+			</div><!--/ BODY BOX-->
+					
+			<div class="pricing-table-space"></div><!-- CONTENT BOX-->
+			<div class="pricing-table-features">
+			<p> <strong>Single</strong> installation</p>
+			<p><strong> Unlimited </strong> Support</p>
+			<p><strong>Validation</strong> W3C</p>
+			<p><strong>Bootstrap</strong> 2.3.0</p>
+			<p><strong>HTML5</strong> &amp; <strong> CSS3</strong></p>
+			</div><!-- /  CONTENT BOX-->
+					
+			<div class="pricing-table-sign-up"><!-- BUTTON BOX-->
+			<a href="#" class="btn btn-large btn-block btn-info">BUY NOW!</a>
+			</div><!-- BUTTON BOX-->
+					
+			</div><!--/ BODY BOX-->
+			</div><!--  SPAN3  -->
+			<!--  STANDART PRICE ITEM  -->
+	  </div>
+	</div><!-- / CONTAINER-->
+</section> 
+ <!-- / SECTION-4 -->
+ 
+
+      
+<!-- FOOTER -->
+<footer id="foot-sec">
+	<div class="container">
+
+			
+			<div class="row">
+				<div class="page-header text-center col-sm-12 col-lg-12">
+					<h3 class="">Stay in touch with us</h3>
+					
+				</div>
+				<hr>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-12 text-center">
+					<div style="display:inline-block">
+						<div class="circ-wrap">
+							<a href="http://www.bootstraptor.com"><i class="icon-facebook icon-4x"></i></a>
+						</div>
+						<div class="circ-wrap">
+							<a href="http://www.bootstraptor.com"><i class="icon-twitter icon-4x"></i></a>
+						</div>					
+						<div class="circ-wrap">
+							<a href="http://www.bootstraptor.com"><i class="icon-github icon-4x"></i></a>
+						</div>					
+						<div class="circ-wrap">
+							<a href="http://www.bootstraptor.com"><i class="icon-linkedin icon-4x"></i></a>
+						</div>					
+						
+						<div class="circ-wrap">
+							<a href="http://www.bootstraptor.com"><i class="icon-google-plus icon-4x"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+			<hr>
+				<div class="text-center col-sm-12 col-lg-12">
+						<p>© 2013 FlatScroller | Built with <a href="http://www.bootstraptor.com">www.Bootstraptor.com</a></p>
+				</div>
+			</div>
+	</div>
+</footer>
+<!-- / FOOTER -->
+   
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://sitediscount.ru/flatscrollerbs3/assets/js/jquery.js"></script> 
+<!-- Latest compiled and minified JavaScript -->
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+
+
+<script src="http://sitediscount.ru/flatscrollerbs3/assets/js/jquery.parallax-1.1.3.js"></script>
+<script src="http://sitediscount.ru/flatscrollerbs3/assets/js/jquery.localscroll-1.2.7-min.js"></script>
+<script src="http://sitediscount.ru/flatscrollerbs3/assets/js/jquery.scrollTo.min.js" ></script>
+<!-- PAGE CUSTOM SCROLLER -->
+<script src="http://sitediscount.ru/flatscrollerbs3/assets/js/jquery.nicescroll.min.js"></script>
+
+<!-- SMOOTH SECTIONS SCROLL + PARALLAX PLUGIN -->
+<script>
+//http://www.ianlunn.co.uk/plugins/jquery-parallax/
+jQuery(document).ready(function(){
+	jQuery('#topnav').localScroll(3000);
+	jQuery('.gobtnwrapper').localScroll(3000);
+	
+	//.parallax(xPosition, speedFactor, outerHeight) options:
+	//xPosition - Horizontal position of the element
+	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+	jQuery('.well').parallax("50%", 0.1);
+	//jQuery('#section-2').parallax("50%", 0.1);
+	//jQuery('#section-3').parallax("50%", 0.1);
+
+})
+</script>
+
+<!-- NICE Scroll plugin -->
+<script>
+//scroll bar custom
+	jQuery(document).ready(
+  function() {  
+    jQuery("html").niceScroll({cursorcolor:"#ffffff"});
+  }
+);
+</script>
+
+<script>
+//hide menu after click on mobile
+jQuery('.navbar .nav > li > a').click(function(){
+		jQuery('.nav-collapse.navbar-responsive-collapse.in').removeClass('in').addClass('collapse').css('height', '0');
+
+		});
+</script>
+
+<script>
+	jQuery('.carousel').carousel({
+  interval: 7000
+})
+</script>
+
+</body>
+</html>
