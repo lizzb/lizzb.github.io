@@ -1,0 +1,142 @@
+body {
+  font: 12px / 1.3em "Lucida Grande", "Calibri", "Helvetica Neue", Verdana, Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.content-wrapper {
+    width: 800px; /* calc(#time-labels.width + #event-container.width); */
+    padding: 10px 0;
+    margin: 20px auto;
+    overflow: hidden; 
+}
+
+/* -------------------------------------------------- */
+  
+#time-labels {
+    margin: -15px 10px 0 0;
+    position: relative;
+    float: left;
+    width: 75px; 
+    color: #A7A7A7;
+    font-size: 10pt;
+    text-align: right;
+}
+.tick {
+    height: 30px;
+    line-height: 30px;
+}
+.major {
+    font-size: 14px;
+    color: #686868;
+    font-weight: bold;
+}
+.ampm {
+    padding-left: 2px;
+    color: #a6a6a6;
+    font-variant: small-caps;
+    font-weight: normal;
+}
+.minor {
+    font-size: 9px;
+    color: #bcbcbc;
+    font-weight: bold;
+}
+.minor .ampm { display: none; }
+
+/* -------------------------------------------------- */
+
+#event-container {
+    height: 720px;
+    width: 620px; 
+    padding: 0 10px;
+    background-color: #efefef;
+    border-left: 1px solid #D6D6D6;
+    position: relative;
+    float: left; 
+}
+
+#event-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.event {
+    padding: 5px 10px;  
+    border:1px solid #D6D6D6;
+    border-left: 5px solid #4B6EA9; 
+    background-color: #fff;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+
+    /*position: relative;
+    float: left;*/
+    
+    position: absolute;
+}
+
+#event-container, .event {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* Opted for using left border formatting instead
+.event:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #4B6EA9;
+}*/
+
+.eventTitle {
+    color: #4b6ea9;
+    font-size: 12px;
+    margin: 0;
+}
+.eventLocation {
+    color: #797979;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0;  
+}
+
+
+/* -------------------------------------------------- */
+
+/*
+Default calendar event accent color = "facebook blue" = #3b5998 or 4B6EA9 
+(if no calendar provided)
+
+Otherwise, overrides accent color with calendar-specific colors
+using color names rather than hex/rgb
+(generally better practice, more hue options)
+for quick reference, and because this is an additional/optional feature
+
+Coloring whole border one color (vs 3 grey sides) also looks nice,
+but abiding by reqs from screenshot
+*/
+.default { border-left-color: #4b6ea9 ;}
+.default .eventTitle { color: #4b6ea9 ;}
+
+
+.calendar1 { border-left-color: royalblue; }
+.calendar1 .eventTitle {color: royalblue;}
+
+.calendar2 { border-left-color: hotpink; }
+.calendar2 .eventTitle {color: hotpink;}
+
+.calendar3 {border-left-color: darkturquoise; }
+.calendar3 .eventTitle {color: darkturquoise;}
+
+
+
