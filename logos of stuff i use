@@ -1,0 +1,53 @@
+<a> Bootstrap 2 </a>
+
+<style>
+a { background: linear-gradient(45deg, #020031 0%,#6d3353 100%); display: block; height: 50px; width: 80px;}
+
+.bs3 {position: relative;
+padding: 30px 15px;
+color: #cdbfe3;
+text-align: center;
+text-shadow: 0 1px 0 rgba(0,0,0,.1);
+background-color: #6f5499;
+background-image: -webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499));
+background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+background-image: -o-linear-gradient(top,#563d7c 0,#6f5499 100%);
+background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+background-repeat: repeat-x;
+
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+line-height: 1.42857143;
+}
+</style>
+
+
+http://commons.wikimedia.org/wiki/File:SVG_logo.svg#mediaviewer/File:SVG_logo.svg
+
+<a class='bs3'>Bootstrap 3</a>
+
+https://angularjs.org/img/AngularJS-large.png
+https://docs.angularjs.org/img/angularjs-for-header-only.svg
+AngularJS
+
+Mustache
+
+http://ionicframework.com/img/ionic-logo-white.svg
+
+<img src="http://getbootstrap.com/2.3.2/assets/ico/favicon.png">
+
+<img src="http://getbootstrap.com/2.3.2/assets/ico/apple-touch-icon-144-precomposed.png">
+
+<img src="http://getbootstrap.com/favicon.ico">
+
+<img src="http://getbootstrap.com/apple-touch-icon.png">
+
+http://ionicframework.com/docs/
+http://ionicframework.com/img/ionic-logo-blog.png
+
+https://angularjs.org/
+
+http://getbootstrap.com/
+http://getbootstrap.com/2.3.2/
+http://mustache.github.io/
